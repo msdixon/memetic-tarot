@@ -41,6 +41,14 @@ h1 {
   flex: 1 1 30ch
 }
 
+ /* || original grid */
+ .cards {
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 /* ||original card styling */
@@ -62,10 +70,12 @@ h1 {
   background-color: rgb(215, 202, 234, .5); 
  }
 
+
 /* 
 
 ||original micromodal open modal styling
-
+ */
+ 
 .open {
   background-color: rgb(182, 120, 240);
   color: black;
@@ -80,14 +90,7 @@ h1 {
   /* }
 
 
- || original grid
-  .cards {
-    align-content: center;
-    justify-content: center;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-  } */
+  */
 
 
 
@@ -144,4 +147,4 @@ h1 {
 @keyframes microModalSlideIn {
   from { transform: translateY(15%); }
   to { transform: translateY(0); }
-} */
+}
