@@ -178,7 +178,7 @@ small, .text_small {font-size: 0.8rem;}
   to { opacity: 1; }
 }
 
-/* @keyframes microModalSlideIn {
+ @keyframes microModalSlideIn {
   from { transform: translateY(15%); }
   to { transform: translateY(0); }
-} */}
+}}
