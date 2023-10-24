@@ -277,7 +277,8 @@ small, .text_small {font-size: 0.8rem;}
  @keyframes microModalSlideIn {
   from { transform: translateY(15%); }
   to { transform: translateY(0); }
-}}
+}
+
 .card:hover {
   background: blue;
   opacity: .2;
