@@ -13,6 +13,7 @@ body {
   font-weight: 400;
   line-height: 1.75;
   color: black;
+  display: block;
 }
 .header {
   padding: 60px;
@@ -47,7 +48,7 @@ h5 {font-size: 1.25rem;}
 small, .text_small {font-size: 0.8rem;}
 
 
-.meta{
+.meta {
   position:relative;
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +65,7 @@ small, .text_small {font-size: 0.8rem;}
 
 /* everylayout card & grid  */
 
-.flex-card{
+.flex-card {
   display: flex;
   flex-wrap: wrap;
 }
@@ -104,7 +105,101 @@ small, .text_small {font-size: 0.8rem;}
   background-color: rgb(215, 202, 234, .5); 
  }
 
+ .cluster {
 
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  /* background-image: url("/runeroom/assets/img/bg1.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.one {
+  display: flex;
+  border: 1px solid rgba(128, 128, 128, 0.219);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.two {
+  height: 85%;
+  display: flex;
+  padding: 1px;
+  font-size: small;
+  text-align:end;
+  font-kerning: auto;
+  border: 1px dashed gray;
+}
+
+.three {
+  display: flex;
+  height: 15%;
+  justify-content: center;
+}
+
+.four {
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  /*  */
+}
+
+.cards {
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  background-image: url('/false-idols/runeroom/assets/img/bg1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* .five {
+  border: 1px solid gray;
+  height: 20%;
+  max-width: 800ch;
+  display: flex;
+} */
+
+.six {
+  border: 1px dashed gray;
+  height: 20%;
+  max-width: 800ch;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  border: 2px solid black;
+  background: linear-gradient(to right, rgba(107, 162, 217, 0), rgb(255, 0, 212));
+  margin: 3ch;
+  padding-left: 2ch;
+  padding-right: 2ch;
+  padding-top: 2ch;
+  cursor: auto;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(215, 202, 234, .5);
+}
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
 /* 
 
 ||original micromodal open modal styling
@@ -115,7 +210,7 @@ small, .text_small {font-size: 0.8rem;}
   color: black;
   font-size: 16px;
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   border: 1px;
   cursor: pointer;
   border-radius: 5px;
@@ -182,3 +277,8 @@ small, .text_small {font-size: 0.8rem;}
   from { transform: translateY(15%); }
   to { transform: translateY(0); }
 }}
+.card:hover {
+  background: blue;
+  opacity: .2;
+  transform: scale(2,2) skewY(1deg);
+}
