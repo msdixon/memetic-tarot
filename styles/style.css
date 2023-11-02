@@ -285,5 +285,5 @@ small, .text_small {font-size: 0.8rem;}
 .card:hover {
   background: blue;
   opacity: .2;
-  transform: scale(2,2) skewY(1deg);
+  /* transform: scale(2,2) skewY(1deg); */
 }
