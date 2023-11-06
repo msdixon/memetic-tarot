@@ -85,7 +85,14 @@ small, .text_small {font-size: 0.8rem;}
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+/* .cards {
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  background-image: url('/false-idols/runeroom/assets/img/bg1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
 
 /* ||original card styling */
  .card {
@@ -107,7 +114,6 @@ small, .text_small {font-size: 0.8rem;}
  }
 
  .cluster {
-
   align-content: center;
   justify-content: center;
   position: relative;
@@ -152,14 +158,7 @@ small, .text_small {font-size: 0.8rem;}
   /*  */
 }
 
-/* .cards {
-  align-content: center;
-  justify-content: center;
-  position: relative;
-  background-image: url('/false-idols/runeroom/assets/img/bg1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
+
 
 
 /* .five {
@@ -183,7 +182,8 @@ small, .text_small {font-size: 0.8rem;}
   height: 200px;
   display: flex;
   border: 2px solid black;
-  background: linear-gradient(to right, rgba(107, 162, 217, 0), rgb(255, 0, 212));
+  background: rgba(107, 162, 217, 0); 
+  opacity: .2;
   margin: 3ch;
   padding-left: 2ch;
   padding-right: 2ch;
@@ -193,7 +193,7 @@ small, .text_small {font-size: 0.8rem;}
   justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgb(215, 202, 234, .5);
+  /* background-color: rgb(215, 202, 234, .5); */
 }
 
 .card img {
