@@ -1,4 +1,6 @@
+
 document.addEventListener("DOMContentLoaded", function(){console.log('loaded') });
+
 
 console.log(5 + 6);
 
