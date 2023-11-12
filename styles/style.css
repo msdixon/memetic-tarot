@@ -145,7 +145,7 @@ small, .text_small {font-size: 0.8rem;}
 }
 
 .four {
-  position:relative;
+  position:absolute;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
