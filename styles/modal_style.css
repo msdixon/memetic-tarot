@@ -3,7 +3,7 @@
 /* original micromodal open modal styling */
 
 .open {
-    position: relative;
+    position: absolute;
     background-color: rgb(182, 120, 240);
     color: black;
     font-size: 16px;
