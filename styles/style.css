@@ -84,6 +84,7 @@ h5 {font-size: 1.25rem;}
   position: static;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 /* .cards {
   align-content: center;
@@ -187,4 +188,5 @@ h5 {font-size: 1.25rem;}
   width: 100%;
   height: auto;
   object-fit: cover;
+  z-index: 2;
   }
