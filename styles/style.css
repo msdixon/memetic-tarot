@@ -6,7 +6,7 @@ html {
   font-size: 100%;
   font-family: 'Poppins', sans-serif;
   background-color: #F4EEDC;
-} /*16px*/
+} 
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -47,22 +47,16 @@ h5 {font-size: 1.25rem;}
 
 .small, .text_small {font-size: 0.8rem;}
 
-
-.meta {
-  position:relative;
-  flex-wrap: wrap;
-  box-sizing: border-box;
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  top: 0;
+  align-content:end;
   width: 100%;
-  height: 100%;
-  margin: 10px;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  /* background-color: rgb(215, 202, 234, .5); */
-  /* background-image: url("/runeroom/assets/img/bg1.jpg"); */
-  background-size: cover;
-}
-
+  z-index: 1;
+  font-family: 'Poppins', sans-serif;
+} 
 
 /* everylayout card & grid  */
 
@@ -189,4 +183,8 @@ h5 {font-size: 1.25rem;}
 
 .un {background-image: url('/assets/img/Cups02.jpg');
 background-size: cover;
+  }
+
+.deux {background-image: url('https://commons.wikimedia.org/wiki/File:Three_of_Cups,_Waite-Smith_Tarot_Deck,_Yale_University.jpg');
+  background-size: cover;
   }
