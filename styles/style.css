@@ -165,7 +165,7 @@ h5 {font-size: 1.25rem;}
   text-align: center;
 }
 
-.card {
+/* .card {
   width: 200px;
   height: 200px;
   display: flex;
@@ -182,7 +182,7 @@ h5 {font-size: 1.25rem;}
   background-size: cover;
   background-repeat: no-repeat;
   /* background-color: rgb(215, 202, 234, .5); */
-}
+/* } */ 
 
 .card_img {
   width: 100%;
