@@ -15,7 +15,7 @@ body {
   color: black;
   display: block;
 }
-.header {
+header {
   padding: 60px;
   text-align: center;
   background-color: #F4EEDC;
@@ -65,7 +65,7 @@ h5 {font-size: 1.25rem;}
   flex-wrap: wrap;
 }
 
-.flex-grid{
+.flex-grid {
   flex: 1 1 30ch
 }
 
@@ -181,7 +181,7 @@ h5 {font-size: 1.25rem;}
   z-index: 2;
   }
 
-.un {background-image: url('https://msdixon.github.io/memetic-tarot/assets/img/Cups02.jpg');
+.un {background-image: url('./memetic-tarot/assets/img/Cups02.jpg');
 background-size: cover;
   }
 
