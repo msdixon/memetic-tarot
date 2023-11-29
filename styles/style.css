@@ -181,7 +181,7 @@ h5 {font-size: 1.25rem;}
   z-index: 2;
   }
 
-.un {background-image: url('../assets/img/Cups02.jpg');
+.un {background-image: url('./assets/img/Cups02.jpg');
 background-size: cover;
   }
 
@@ -189,6 +189,6 @@ background-size: cover;
   background-size: cover;
   }
 
-.trois {background-image: url('s../assets/img/etteillaQueenOfCups.jpeg');
+.trois {background-image: url('../assets/img/etteillaQueenOfCups.jpeg');
   background-size: cover;
   }
