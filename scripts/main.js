@@ -12,7 +12,7 @@ MicroModal.init({
 // // find element for event to be on
 // var cardsBackground = document.querySelector(".cards");
 // var cards = document.querySelectorAll(".card");
-// //var backgroundImages = ["/false-idols/runeroom/assets/img/bg2.jpg", "/false-idols/runeroom/assets/img/bg3.jpg", "/false-idols/runeroom/assets/img/bg4.jpg", "/false-idols/runeroom/assets/img/bg5.jpg", "/false-idols/runeroom/assets/img/bg8.jpg", "/false-idols/runeroom/assets/img/bg6.jpg", "/false-idols/runeroom/assets/img/bg7.jpg", "/false-idols/runeroom/assets/img/bg9.jpg", "/false-idols/runeroom/assets/img/bg10.jpg"];
+// //var backgroundImages = ["/memetic-tarot/assets/img/Cups02.jpg", "/false-idols/runeroom/assets/img/bg3.jpg", "/false-idols/runeroom/assets/img/bg4.jpg", "/false-idols/runeroom/assets/img/bg5.jpg", "/false-idols/runeroom/assets/img/bg8.jpg", "/false-idols/runeroom/assets/img/bg6.jpg", "/false-idols/runeroom/assets/img/bg7.jpg", "/false-idols/runeroom/assets/img/bg9.jpg", "/false-idols/runeroom/assets/img/bg10.jpg"];
 // // add event listener with Math random loop
 // cards.forEach(card => {
 //   card.addEventListener('click', function() {

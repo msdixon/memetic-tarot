@@ -188,3 +188,7 @@ background-size: cover;
 .deux {background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Three_of_Cups%2C_Waite-Smith_Tarot_Deck%2C_Yale_University.jpg/723px-Three_of_Cups%2C_Waite-Smith_Tarot_Deck%2C_Yale_University.jpg?20220710234654');
   background-size: cover;
   }
+
+.trois {background-image: url('/Users/racheldixon/Documents/GitHub/memetic-tarot/assets/img/etteillaQueenOfCups.jpeg');
+  background-size: cover;
+  }
