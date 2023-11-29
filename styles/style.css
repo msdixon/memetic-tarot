@@ -15,7 +15,7 @@ body {
   color: black;
   display: block;
 }
-header {
+.header {
   padding: 60px;
   text-align: center;
   background-color: #F4EEDC;
@@ -52,7 +52,7 @@ h5 {font-size: 1.25rem;}
   flex-flow: row wrap;
   gap: 1rem;
   top: 0;
-  align-content:end;
+  align-content:;
   width: 100%;
   z-index: 1;
   font-family: 'Poppins', sans-serif;
@@ -185,10 +185,30 @@ h5 {font-size: 1.25rem;}
 background-size: cover;
   }
 
-.deux {background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Three_of_Cups%2C_Waite-Smith_Tarot_Deck%2C_Yale_University.jpg/723px-Three_of_Cups%2C_Waite-Smith_Tarot_Deck%2C_Yale_University.jpg?20220710234654');
+.deux {background-image: url('../assets/img/Etteilla-QueenCups.jpeg');
   background-size: cover;
   }
 
-/* .trois {background-image: url('../ssets/img/etteillaQueenOfCups.jpeg');
+.trois {background-image: url('../assets/img/MinchiateCups04.jpg');
   background-size: cover;
-  } */
+  }
+
+.quatre {background-image: url('../assets/img/Sola_Busca_Cups02.jpg');
+  background-size: cover;
+  }
+
+.cinq {background-image: url('../assets/img/Bembo-Visconti-KnaveOfCups.jpg');
+  background-size: cover;
+  }
+
+.six {background-image: url('../assets/img/ChaosOracleDuDames.jpg');
+  background-size: cover;
+  }
+
+.sept {background-image: url('../assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg');
+  background-size: cover;
+  }
+
+.huit {background-image: url('../assets/img/Tarokk_kártya_Barely_09Cup.jpg');
+  background-size: cover;
+  }
