@@ -52,7 +52,7 @@ h5 {font-size: 1.25rem;}
   flex-flow: row wrap;
   gap: 1rem;
   top: 0;
-  align-content:;
+  align-content:flex-end;
   width: 100%;
   z-index: 1;
   font-family: 'Poppins', sans-serif;
