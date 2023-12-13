@@ -99,7 +99,7 @@ h5 {font-size: 1.25rem;}
 /* ||original card styling */
  .card {
   width: 200px;
-  height: 200px;
+  height: 400px;
   display: flex;
   border: 1px solid black;
   background: linear-gradient(to right, rgba(107, 162, 217, 0), rgb(255, 0, 212));
@@ -127,7 +127,7 @@ h5 {font-size: 1.25rem;}
   font-size: small;
   text-align:end;
   font-kerning: auto;
-  border: 1px dashed gray;
+  border: 1px gray;
 }
 
 .three {
@@ -157,14 +157,14 @@ h5 {font-size: 1.25rem;}
 } */
 
 .six {
-  border: 1px dashed gray;
+  border: 1px gray;
   height: 20%;
   max-width: 800ch;
   display: flex;
   justify-content: center;
   text-align: center;
 }
-
+/* 
 .card {
   width: 200px;
   height: 200px;
@@ -178,7 +178,7 @@ h5 {font-size: 1.25rem;}
   justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+ } */
 
 .card_img {
   width: 100%;
@@ -207,16 +207,16 @@ background-size: cover;
   background-size: cover;
   }
 
-.six {background-image: url('../assets/img/ChaosOracleDuDames.jpg');
+.sixx {background-image: url('../assets/img/ChaosOracleDuDames.jpg');
   background-size: cover;
   }
 
-.sept {background-image: url('../assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg');
+/* .sept {background-image: url('../assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg');
   background-size: cover;
   }
 
 .huit {background-image: url('../assets/img/TarokkKartya_Barely_09Cup.jpg');
   background-size: cover;
-  }
+  } */
 
 /* .neuf {background-image: url('../assets/img/');  */
