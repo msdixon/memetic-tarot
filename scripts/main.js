@@ -17,7 +17,7 @@ var backgroundImages = ["/memetic-tarot/assets/img/Cups02.jpg", "../assets/img/T
 cards.forEach(card => {
   card.addEventListener('click', function() {
     var randomImage = backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
-    cardsBackground.style.backgroundImage = `url(${randomImage})`;
+    // cardsBackground.style.backgroundImage = `url(${randomImage})`;
     
   console.log("6+9") ;
   });
