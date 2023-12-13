@@ -46,7 +46,8 @@ h5 {font-size: 1.25rem;}
 
 .small, .text_small {font-size: 0.8rem;}
 
-.nav {
+/* navigation bar */
+.nav-list {
   display: flex;
   flex-flow: row wrap;
   gap: 1rem;
@@ -56,6 +57,13 @@ h5 {font-size: 1.25rem;}
   z-index: 1;
   font-family: 'Poppins', sans-serif;
 } 
+
+.nav-item {
+} 
+
+.nav-link {
+
+}
 
 /* everylayout card & grid  */
 
