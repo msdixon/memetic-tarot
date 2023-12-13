@@ -8,7 +8,6 @@ MicroModal.init({
     disableScroll: true
   });
     
-// console.log("yo");
 // find element for event to be on
 var cardsBackground = document.querySelector(".cards");
 var cards = document.querySelectorAll(".card");
