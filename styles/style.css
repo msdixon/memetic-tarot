@@ -9,7 +9,6 @@ html {
 } 
 
 body {
-  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.75;
   color: black;
@@ -87,14 +86,6 @@ h5 {font-size: 1.25rem;}
   background-repeat: no-repeat;
   z-index: 1;
 }
-/* .cards {
-  align-content: center;
-  justify-content: center;
-  position: relative;
-  background-image: url('/false-idols/runeroom/assets/img/bg1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
 
 /* ||original card styling */
  .card {
@@ -164,21 +155,6 @@ h5 {font-size: 1.25rem;}
   justify-content: center;
   text-align: center;
 }
-/* 
-.card {
-  width: 200px;
-  height: 200px;
-  display: flex;
-  margin: 3ch;
-  padding-left: 2ch;
-  padding-right: 2ch;
-  padding-top: 2ch;
-  cursor: auto;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
- } */
 
 .card_img {
   width: 100%;
@@ -211,12 +187,14 @@ background-size: cover;
   background-size: cover;
   }
 
-/* .sept {background-image: url('../assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg');
+.sept {background-image: url('../assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg');
   background-size: cover;
   }
 
 .huit {background-image: url('../assets/img/TarokkKartya_Barely_09Cup.jpg');
   background-size: cover;
-  } */
+  } 
 
-/* .neuf {background-image: url('../assets/img/');  */
+ .neuf {background-image: url('../assets/img/');
+  background-size: cover;
+ }
