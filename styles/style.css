@@ -17,7 +17,6 @@ body {
 .header {
   padding: 60px;
   text-align: center;
-  color: white;
   font-size: 30px;
 }
 
@@ -31,11 +30,12 @@ h1, h2, h3, h4, h5 {
 h1 {
   margin-top: 0;
   font-size: 3.052rem;
-  color: rgb(163, 0, 0);
+  color: rgb(121, 3, 3);
   font-weight: 800;
 }
 
-h2 {font-size: 2.441rem;}
+h2 {font-size: 2.441rem;
+  color: rgb(2, 93, 103)}
 
 h3 {font-size: 1.953rem; text-align: center; position: relative;}
 
@@ -45,15 +45,25 @@ h5 {font-size: 1.25rem;}
 
 .small, .text_small {font-size: 0.8rem;}
 
+/* interation button  */
+.shuffle-button {
+  font-size: 1.953rem; position: relative;
+  text-align: center;
+  background-color: rgb(121, 3, 3);
+  color: white;
+  padding-block: 1rem 1.5rem;
+  margin-inline: 42.5%;
+  border-radius: 1%;
+  }
+
 /* navigation bar */
 .nav-list {
   display: flex;
   flex-flow: row wrap;
-  gap: 1rem;
-  top: 0;
-  align-content:flex-end;
-  width: 100%;
-  z-index: 1;
+  gap: 2rem;
+  top: auto;
+  align-content:center;
+
   font-family: 'Poppins', sans-serif;
 } 
 /* 
