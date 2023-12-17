@@ -1,8 +1,8 @@
-
+// load DOM before running script
 document.addEventListener("DOMContentLoaded", function(){console.log('DOMloaded') });
 
-
-
+console.log(5 + 6);
+// initialize modals
 MicroModal.init({
     disableScroll: true
   });
