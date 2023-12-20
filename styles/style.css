@@ -103,7 +103,7 @@ h5 {font-size: 1.25rem;}
   height: 400px;
   display: flex;
   border: 1px solid black;
-  background: linear-gradient(to right, rgba(107, 162, 217, 0), rgb(255, 0, 212));
+  /* background: linear-gradient(to right, rgba(107, 162, 217, 0), rgb(255, 0, 212)); */
   margin: 3ch;
   padding-left: 2ch;
   padding-right: 2ch;
