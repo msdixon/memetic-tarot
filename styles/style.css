@@ -45,7 +45,7 @@ h5 {font-size: 1.25rem;}
 
 .small, .text_small {font-size: 0.8rem;}
 
-/* interation button  */
+/* interaction button  */
 .shuffle-button {
   font-size: 1.953rem; position: relative;
   text-align: center;
@@ -63,7 +63,6 @@ h5 {font-size: 1.25rem;}
   gap: 2rem;
   top: auto;
   align-content:center;
-
   font-family: 'Poppins', sans-serif;
 } 
 /* 
