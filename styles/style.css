@@ -3,19 +3,27 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400');
 
 html {
-  font-size: 100%;
   font-family: 'Poppins', sans-serif;
   background-color: #F4EEDC;
 } 
 
 body {
   font-weight: 400;
+  font-size: 1.25rem;
   line-height: 1.75;
   color: black;
   display: block;
 }
 .header {
   text-align: center;
+}
+
+footer {
+  text-align: center;
+  color: black;
+  display: block;
+  margin: 2rem 0 1.38rem;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -29,14 +37,15 @@ h1 {
   font-size: 3.052rem;
   color: rgb(121, 3, 3);
   font-weight: 800;
+  text-align: center;
 }
 
 h2 {font-size: 2.441rem;
   color: rgb(2, 93, 103)}
 
-h3 {font-size: 1.953rem; text-align: center; position: relative;}
+h3 {font-size: 1.953rem; text-align: center; position: relative; color: rgb(2, 93, 103)}
 
-h4 {font-size: 1.563rem;}
+h4 {font-size: 1.563rem; color: rgb(2, 93, 103);}
 
 h5 {font-size: 1.25rem;}
 
