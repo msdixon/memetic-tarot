@@ -179,35 +179,35 @@ h5 {font-size: 1.25rem;}
   z-index: 2;
   }
 
-.un {background-image: url('../assets/img/Cups02.jpg');
+.cupstwo-sw {background-image: url('../assets/img/Cups02.jpg');
 background-size: cover;
   }
 
-.deux {background-image: url('../assets/img/Etteilla-QueenCups.jpeg');
+.cupsqueen-et {background-image: url('../assets/img/Etteilla-QueenCups.jpeg');
   background-size: cover;
   }
 
-.trois {background-image: url('../assets/img/MinchiateCups04.jpg');
+.cupsfour-minch {background-image: url('../assets/img/MinchiateCups04.jpg');
   background-size: cover;
   }
 
-.quatre {background-image: url('../assets/img/Sola_Busca_Cups02.jpg');
+.cupstwo-sbus {background-image: url('../assets/img/Sola_Busca_Cups02.jpg');
   background-size: cover;
   }
 
-.cinq {background-image: url('../assets/img/Bembo-Visconti-KnaveOfCups.jpg');
+.cupsknave-bv {background-image: url('../assets/img/Bembo-Visconti-KnaveOfCups.jpg');
   background-size: cover;
   }
 
-.sixx {background-image: url('../assets/img/ChaosOracleDuDames.jpg');
+.chaos-ddames {background-image: url('../assets/img/ChaosOracleDuDames.jpg');
   background-size: cover;
   }
 
-.sept {background-image: url('../assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg');
+.cupsthree-sw {background-image: url('../assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg');
   background-size: cover;
   }
 
-.huit {background-image: url('../assets/img/TarokkKartya_Barely_09Cup.jpg');
+.cupsnine-tarok {background-image: url('../assets/img/TarokkKartya_Barely_09Cup.jpg');
   background-size: cover;
   } 
 
