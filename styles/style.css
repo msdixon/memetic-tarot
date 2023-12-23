@@ -107,11 +107,11 @@ h5 {font-size: 1.25rem;}
 
 /* ||original card styling */
  .card {
-  width: 300px;
+  width: auto;
   height: 400px;
   display: flex;
-  /* border: 5px ridge black;
-  box-sizing: border-box; */
+  /* border: 5px ridge black; */
+  box-sizing: content-box;
   /* background: linear-gradient(to right, rgba(107, 162, 217, 0), rgb(255, 0, 212)); */
   margin: 2ch;
   padding: 1px;
