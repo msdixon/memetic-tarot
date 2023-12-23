@@ -173,13 +173,15 @@ h5 {font-size: 1.25rem;}
 }
 
 .card_img {
-  width: 100%;
-  height: auto;
+  /* height: auto;
+  width: auto; */
   object-fit: cover;
+  background-size: cover;
   z-index: 2;
   }
 
-.cupstwo-sw {background-image: url('../assets/img/Cups02.jpg');
+.cupstwo-sw {
+  background-image: url('../assets/img/Cups02.jpg');
 background-size: cover;
   }
 
