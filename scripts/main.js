@@ -31,12 +31,13 @@ function shuffleDeck() {
   card.forEach(shuffle => {
   shuffle.addEventListener('click', function() {
     var randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
-    reading.style.card_img= `url(${randomImage})`;
+    card_img.style.src= `url(${randomImage})`;
   });  
  });
+
  onclick = function() {
   var randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
-  reading.style.card_img= `url(${randomImage})`;
+  card_img.style.src= `url(${randomImage})`;
  }
 }
 //  card.innerHTML = randomImage;
