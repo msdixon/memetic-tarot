@@ -26,7 +26,7 @@ var reading = document.getElementsByClassName(".card");
 var tarotImages = ["../assets/img/Cups02.jpg", "../assets/img/TarokkKartya_Barely_09Cup.jpg", "../assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg", "../assets/img/ChaosOracleDuDames.jpg", "../assets/img/Sola_Busca_Cups02.jpg", "../assets/img/MinchiateCups04.jpg", "../assets/img/Etteilla-QueenCups.jpeg", "", "../assets/img/Bembo-Visconti-KnaveOfCups.jpg"];
 
 
-function shuffleDeck() {
+// function shuffleDeck() {
 // add event listener with Math random loop - changed card to reading ln 26
   card.forEach(shuffle => {
   shuffle.addEventListener('click', function() {
@@ -35,11 +35,11 @@ function shuffleDeck() {
   });  
  });
 
- onclick = function() {
-  var randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
-  card_img.style.src= `url(${randomImage})`;
- }
-}
+//  onclick = function() {
+  // var randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
+  // card_img.style.src= `url(${randomImage})`;
+//  }
+// }
 //  card.innerHTML = randomImage;
 
 // var controller = {
