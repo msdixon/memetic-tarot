@@ -17,12 +17,12 @@ var shuffle = document.querySelector(".shuffle-button");
 var tarotImages = ["../assets/img/Cups02.jpg", "../assets/img/TarokkKartya_Barely_09Cup.jpg", "../assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg", "../assets/img/ChaosOracleDuDames.jpg", "../assets/img/Sola_Busca_Cups02.jpg", "../assets/img/MinchiateCups04.jpg", "../assets/img/Etteilla-QueenCups.jpeg", "", "../assets/img/Bembo-Visconti-KnaveOfCups.jpg"];
 
 // add event listener with Math random loop
-card.forEach(shuffle => {
-  shuffle.addEventListener('click', function() {
-    var randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
-    card.style.card_img= `url(${randomImage})`;
-  });  
- });
+// card.forEach(shuffle => {
+//   shuffle.addEventListener('click', function() {
+//     var randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
+//     card.style.card_img= `url(${randomImage})`;
+//   });  
+//  });
   console.log("event listener") ;
 
 // try shuffle on card "deck" rather than background images
