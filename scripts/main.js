@@ -12,7 +12,7 @@ MicroModal.init({
 // find element for target to be on
 var card = document.querySelectorAll(".card");
 // find element for click event to be on
-var shuffle = document.querySelector(".shuffle-button");
+var shuffle = document.getElementsByClassName(".shuffle-button");
 // find elements for random image to be on
 var reading = document.getElementsByClassName(".card");
 
@@ -28,6 +28,8 @@ card.forEach(shuffle => {
  });
 
  card.innerHTML = randomImage;
+
+//  shuffle.onclick = function() {}
 
   console.log("event listener") ;
 

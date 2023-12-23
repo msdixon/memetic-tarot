@@ -107,7 +107,7 @@ h5 {font-size: 1.25rem;}
 
 /* ||original card styling */
  .card {
-  width: auto;
+  width: 220px;
   height: 400px;
   display: flex;
   /* border: 5px ridge black; */
