@@ -26,6 +26,7 @@ let tarotImages = ["../assets/img/Cups02.jpg", "../assets/img/TarokkKartya_Barel
 
 
 // function shuffleDeck() {
+  
 // add event listener to button click
 // shuffle algo math random loop - changed card to reading ln 26
   reading.forEach(shuffle => {
