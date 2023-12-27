@@ -71,6 +71,7 @@ h5 {font-size: 1.25rem;}
   flex-flow: row wrap;
   gap: 2rem;
   top: auto;
+  list-style: none;
   align-content: right;
   font-family: 'Poppins', sans-serif;
 } 
