@@ -23,6 +23,7 @@ let reading = document.getElementsByClassName(".card");
 
 // create array of tarot images for the cards to shuffle through
 let tarotImages = ["../assets/img/Cups02.jpg", "../assets/img/TarokkKartya_Barely_09Cup.jpg", "../assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg", "../assets/img/ChaosOracleDuDames.jpg", "../assets/img/Sola_Busca_Cups02.jpg", "../assets/img/MinchiateCups04.jpg", "../assets/img/Etteilla-QueenCups.jpeg", "", "../assets/img/Bembo-Visconti-KnaveOfCups.jpg"];
+  array.isArray(tarotImages);
 
 
 // function shuffleDeck() {
@@ -58,3 +59,5 @@ let tarotImages = ["../assets/img/Cups02.jpg", "../assets/img/TarokkKartya_Barel
 //     [deck[i], deck[j]] = [deck[j], deck[i]];
 //   }
 // }
+
+// declare individual cards as objects with modal, image, data
