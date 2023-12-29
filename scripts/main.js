@@ -10,8 +10,10 @@ MicroModal.init({
 console.log("modalsLoaded");
 // find element for target to be on
 let card = document.querySelectorAll(".card_img");
+let reading = document.getElementsByClassName(".card");
 
 // add event listener to button click
+
 // shuffle algo math random loop - changed card to reading ln 26
 let shuffleDeck = reading.forEach(shuffle => {
   shuffle.addEventListener('click', function() {
@@ -30,16 +32,14 @@ function init() {
 console.log("shuffle button");
 
 // find elements for random image to be on
-let reading = document.getElementsByClassName(".card");
+
 
 // create array of tarot images for the cards to shuffle through
 let tarotImages = ["../assets/img/Cups02.jpg", "../assets/img/TarokkKartya_Barely_09Cup.jpg", "../assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg", "../assets/img/ChaosOracleDuDames.jpg", "../assets/img/Sola_Busca_Cups02.jpg", "../assets/img/MinchiateCups04.jpg", "../assets/img/Etteilla-QueenCups.jpeg", "", "../assets/img/Bembo-Visconti-KnaveOfCups.jpg"];
   array.isArray(tarotImages);
 
-
 // function shuffleDeck() {
   
-
 // const onclick = function() {
   // var randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
   // card_img.style.src= `url(${randomImage})`;
@@ -63,4 +63,18 @@ let tarotImages = ["../assets/img/Cups02.jpg", "../assets/img/TarokkKartya_Barel
 //   }
 // }
 
-// declare individual cards as objects with modal, image, data
+const tarotCardSet = [
+  { title: "ace de coups", Image: ".assets/img/AceCoups1760.jpeg", alt: "Ace de Coups", cardNumberValue: "1", suit: "Cups", modal: "modal1" },
+  { title: "Ace of Cups (Rider-Waite)", img: ".assets/img/AceOfCupsFlickr.jpg", alt: "Ace of Cups (Rider-Waite)", cardNumberValue: "1", suit: "Cups", modal: "modal2" }
+  // img:
+  // alt:
+  // 
+  // card number:
+  // suit:
+  // modal: 
+]
+
+
+// function to go through array
+//  target cards add images inner.HTML maybe with function 
+//  add event listener to button click
