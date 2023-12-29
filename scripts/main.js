@@ -11,6 +11,16 @@ console.log("modalsLoaded");
 // find element for target to be on
 let card = document.querySelectorAll(".card_img");
 
+// add event listener to button click
+// shuffle algo math random loop - changed card to reading ln 26
+let shuffleDeck = reading.forEach(shuffle => {
+  shuffle.addEventListener('click', function() {
+   const randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
+    card_img.style.src= `url(${randomImage})`;
+});  
+});
+console.log("shuffleDeck");
+
 // find element for click event to be on and assign click handler
 window.onload = init;
 function init() {
@@ -29,14 +39,6 @@ let tarotImages = ["../assets/img/Cups02.jpg", "../assets/img/TarokkKartya_Barel
 
 // function shuffleDeck() {
   
-// add event listener to button click
-// shuffle algo math random loop - changed card to reading ln 26
-  let shuffleDeck = reading.forEach(shuffle => {
-    shuffle.addEventListener('click', function() {
-     const randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
-      card_img.style.src= `url(${randomImage})`;
-  });  
- });
 
 // const onclick = function() {
   // var randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
