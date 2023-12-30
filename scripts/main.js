@@ -10,7 +10,7 @@ console.log("modalsLoaded");
 // declare card containers and card image variables 
 let cardImages = document.querySelectorAll(".card_img");
 // create array of tarot images for the cards to shuffle through
-let tarotImages = ["./assets/img/Cups02.jpg", "./assets/img/TarokkKartya_Barely_09Cup.jpg", "./assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg", "../assets/img/ChaosOracleDuDames.jpg", "./assets/img/Sola_Busca_Cups02.jpg", "./assets/img/MinchiateCups04.jpg", "./assets/img/Etteilla-QueenCups.jpeg", "", "./assets/img/Bembo-Visconti-KnaveOfCups.jpg"];
+let tarotImages = ["assets/img/AceCoups1760.jpeg", "assets/img/AceOfCupsFlickr.jpg", "assets/img/Bembo-Visconti-KnaveOfCups.jpg", "assets/img/ChaosOracleDuDames.jpg", "assets/img/Sola_Busca_Cups02.jpg", "assets/img/MinchiateCups04.jpg", "assets/img/Etteilla-QueenCups.jpeg", "assets/img/Cups02.jpg", "assets/img/Bembo-Visconti-KnaveOfCups.jpg", "/assets/img/Minchiate03Cups.jpeg"];
 
 // find element for click event to be on and assign click handler
 window.onload = function(){
@@ -32,57 +32,8 @@ window.onload = function(){
   });
 }
 
-
-// card.forEach(function(card){
-//   shuffle-button.addEventListener('click', function(){
-//     // Inside the loop, generate a random index based on the length of the image array.
-//     const randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
-//     // Inside the loop, create an image element
-//     let cardImages = document.querySelectorAll('.card_img') [0];
-//     // Inside the loop use the random index to grab the image src from the image array
-//     cardImages.src= `url(${randomImage})`;
-//   }); 
-// }
-
 console.log("shuffle button");
-// shuffle algo math random loop through card container
-// function shuffleDeck() {
-//   card.addEventListener('click', function() {
-//     // Inside the loop, generate a random index based on the length of the image array.
-//    const randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
-//    let cardImages = document.querySelectorAll('.card_img') [0];
-//     cardImages.src= `url(${randomImage})`;
-// });  
-// };
-// console.log("shuffleDeck");
-
-// const randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
-
-// add random card algo to match random image algo
-
-
-// function shuffleDeck(tarotImages) {
-//   for (let i = tarotImages.length - 1; i > 0; i--) {
-//     const j = Math.floor(Math.random() * (i + 1));
-//     [tarotImages[i], tarotImages[j]] = [tarotImages[j], tarotImages[i]];
-//   }
-// }
-
-// find elements for random image to be on
-
-// function shuffleDeck() {
-  
-// shuffleDeck = function() {
-  // var randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
-  // card_img.style.src= `url(${randomImage})`;
-//  }
-// }
-//  card.innerHTML = randomImage;
-
-// var controller = {
-
-// }
-
+// create array of tarot objects
 const tarotCardSet = [
   { title: "ace de coups", Image: ".assets/img/AceCoups1760.jpeg", alt: "Ace de Coups", cardNumberValue: "1", suit: "Cups", modal: "modal1" },
   { title: "Ace of Cups (Rider-Waite)", img: ".assets/img/AceOfCupsFlickr.jpg", alt: "Ace of Cups (Rider-Waite)", cardNumberValue: "1", suit: "Cups", modal: "modal2" }
