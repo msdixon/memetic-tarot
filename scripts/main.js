@@ -11,7 +11,7 @@ console.log("modalsLoaded");
 let cardImages = document.querySelectorAll(".card_img");
 // let cardContainers = document.querySelectorAll(".card");
 // create array of tarot images for the cards to shuffle through
-let tarotImages = ["../assets/img/Cups02.jpg", "../assets/img/TarokkKartya_Barely_09Cup.jpg", "../assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg", "../assets/img/ChaosOracleDuDames.jpg", "../assets/img/Sola_Busca_Cups02.jpg", "../assets/img/MinchiateCups04.jpg", "../assets/img/Etteilla-QueenCups.jpeg", "", "../assets/img/Bembo-Visconti-KnaveOfCups.jpg"];
+let tarotImages = ["./assets/img/Cups02.jpg", "./assets/img/TarokkKartya_Barely_09Cup.jpg", "./assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg", "../assets/img/ChaosOracleDuDames.jpg", "./assets/img/Sola_Busca_Cups02.jpg", "./assets/img/MinchiateCups04.jpg", "./assets/img/Etteilla-QueenCups.jpeg", "", "./assets/img/Bembo-Visconti-KnaveOfCups.jpg"];
 
 // add event listener to button click?? TK: should this be before loop
 // find element for click event to be on and assign click handler
