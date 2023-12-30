@@ -17,21 +17,24 @@ window.onload = function(){
   // select shuffle action button
   let shuffleButton = document.querySelector(".shuffle-button");
   // add event listener to button
+  
   shuffleButton.addEventListener('click', function() {
   // select all card containers
   let cardContainers = document.querySelectorAll('.card');
+  // create copy of tarot images array here instead
+  let tarotImagesCopy = [...tarotImages];
   // loop through card containers
   cardContainers.forEach(function(card){
     // Inside the loop, generate a random index based on the length of the image array.
-    const randomIndex = tarotImages[Math.floor(Math.random() * tarotImages.length)];
-    // Inside the loop, create an image element
+    const randomIndex = [Math.floor(Math.random() * tarotImages.length)];
     const randomImage = tarotImagesCopy[randomIndex];
-    // remove an image from array
+    // remove the image from the array
     tarotImagesCopy.splice(randomIndex, 1);
-    // Inside the loop, select the card image element
+    // Inside the loop, create an image element
     let cardImages = card.querySelector('.card_img');
     // set the src attribute of image to random image
     cardImages.src= randomImage;
+    
   }); 
   });
 }
