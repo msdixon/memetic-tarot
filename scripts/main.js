@@ -26,7 +26,7 @@ window.onload = function(){
   // loop through card containers
   cardContainers.forEach(function(card){
     // Inside the loop, generate a random index based on the length of the image array.
-    const randomIndex = [Math.floor(Math.random() * tarotImages.length)];
+    const randomIndex = Math.floor(Math.random() * tarotImages.length);
     const randomImage = tarotImagesCopy[randomIndex];
     // remove the image from the array
     tarotImagesCopy.splice(randomIndex, 1);
