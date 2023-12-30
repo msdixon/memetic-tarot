@@ -9,14 +9,12 @@ console.log("modalsLoaded");
 
 // declare card containers and card image variables 
 let cardImages = document.querySelectorAll(".card_img");
-// let cardContainers = document.querySelectorAll(".card");
 // create array of tarot images for the cards to shuffle through
 let tarotImages = ["./assets/img/Cups02.jpg", "./assets/img/TarokkKartya_Barely_09Cup.jpg", "./assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg", "../assets/img/ChaosOracleDuDames.jpg", "./assets/img/Sola_Busca_Cups02.jpg", "./assets/img/MinchiateCups04.jpg", "./assets/img/Etteilla-QueenCups.jpeg", "", "./assets/img/Bembo-Visconti-KnaveOfCups.jpg"];
 
-// add event listener to button click?? TK: should this be before loop
 // find element for click event to be on and assign click handler
 window.onload = function(){
-  // select button
+  // select shuffle action button
   let shuffleButton = document.querySelector(".shuffle-button");
   // add event listener to button
   shuffleButton.addEventListener('click', function() {
@@ -29,7 +27,7 @@ window.onload = function(){
     // Inside the loop, create an image element
     let cardImages = card.querySelector('.card_img');
     // set the src attribute of image to random image
-    cardImages.src= `url(${randomImage})`;
+    cardImages.src= randomImage;
   }); 
   });
 }
@@ -46,20 +44,17 @@ window.onload = function(){
 //   }); 
 // }
 
-
-
-
 console.log("shuffle button");
 // shuffle algo math random loop through card container
-function shuffleDeck() {
-  card.addEventListener('click', function() {
-    // Inside the loop, generate a random index based on the length of the image array.
-   const randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
-   let cardImages = document.querySelectorAll('.card_img') [0];
-    cardImages.src= `url(${randomImage})`;
-});  
-};
-console.log("shuffleDeck");
+// function shuffleDeck() {
+//   card.addEventListener('click', function() {
+//     // Inside the loop, generate a random index based on the length of the image array.
+//    const randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
+//    let cardImages = document.querySelectorAll('.card_img') [0];
+//     cardImages.src= `url(${randomImage})`;
+// });  
+// };
+// console.log("shuffleDeck");
 
 // const randomImage = tarotImages[Math.floor(Math.random() * tarotImages.length)];
 
@@ -75,8 +70,6 @@ console.log("shuffleDeck");
 
 // find elements for random image to be on
 
-
-
 // function shuffleDeck() {
   
 // shuffleDeck = function() {
@@ -89,13 +82,6 @@ console.log("shuffleDeck");
 // var controller = {
 
 // }
-
-//  shuffle.onclick = function() {}
-
-  console.log("event listener") ;
-
-
-
 
 const tarotCardSet = [
   { title: "ace de coups", Image: ".assets/img/AceCoups1760.jpeg", alt: "Ace de Coups", cardNumberValue: "1", suit: "Cups", modal: "modal1" },
