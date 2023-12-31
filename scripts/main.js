@@ -25,7 +25,7 @@ window.onload = function(){
   // loop through card containers
     cardContainers.forEach(function(card){
        // If tarotImagesCopy is exhausted, refill it
-    if (tarotImagesCopy.length <= 8) {
+    if (tarotImagesCopy.length <= 6) {
       tarotImagesCopy = [...tarotImages];
     }
     // Inside the loop, generate a random index based on the length of the image array.
