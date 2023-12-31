@@ -17,16 +17,19 @@ window.onload = function(){
   // select shuffle action button
   let shuffleButton = document.querySelector(".shuffle-button");
   // add event listener to button
-  
   shuffleButton.addEventListener('click', function() {
   // select all card containers
-  let cardContainers = document.querySelectorAll('.card');
+    let cardContainers = document.querySelectorAll('.card');
   // create copy of tarot images array here instead
-  let tarotImagesCopy = [...tarotImages];
+    let tarotImagesCopy = [...tarotImages];
   // loop through card containers
-  cardContainers.forEach(function(card){
+    cardContainers.forEach(function(card){
+       // If tarotImagesCopy is exhausted, refill it
+    if (tarotImagesCopy.length <= 8) {
+      tarotImagesCopy = [...tarotImages];
+    }
     // Inside the loop, generate a random index based on the length of the image array.
-    const randomIndex = Math.floor(Math.random() * tarotImages.length);
+    const randomIndex = Math.floor(Math.random() * tarotImagesCopy.length);
     const randomImage = tarotImagesCopy[randomIndex];
     // remove the image from the array
     tarotImagesCopy.splice(randomIndex, 1);
