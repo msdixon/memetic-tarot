@@ -42,6 +42,22 @@ h4 {font-size: 1.563rem; color: rgb(2, 93, 103);}
 
 h5 {font-size: 1.25rem;}
 
+p {
+  margin: 0 0 1.38rem;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  color: black;
+  display: flex;
+ 
+}
+
+subtitle {
+  align-content: end;
+  justify-content: end;
+  text-align: center;
+  container-type: flex;
+}
+
 .small, .text_small {font-size: 0.8rem;}
 
 /* navigation bar */
