@@ -6,7 +6,8 @@ deployment:
     - /bin/cp -R images $DEPLOYPATH
     - /bin/cp -R scripts $DEPLOYPATH
     - /bin/cp -R styles $DEPLOYPATH
-    - /bin/cp -R index.html $DEPLOYPATH
+    - /bin/cp -R about.html $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
     # - /bin/cp style.css $DEPLOYPATH
     # - /bin/cp modal-style.css $DEPLOYPATH
     # - /bin/cp main.js $DEPLOYPATH
