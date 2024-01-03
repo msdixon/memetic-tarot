@@ -38,9 +38,9 @@ h2 {font-size: 2.441rem;
 
 h3 {font-size: 1.953rem; text-align: center; position: relative; color: rgb(2, 93, 103)}
 
-h4 {font-size: 1.563rem; color: rgb(2, 93, 103);}
+h4 {font-size: 1.563rem; color: rgb(2, 93, 103); text-align: center; position: relative;}
 
-h5 {font-size: 1.25rem;}
+h5 {font-size: 1.25rem; color:  rgb(2, 93, 103); text-align: center; position: relative;}
 
 p {
   margin: 0 0 1.38rem;
@@ -64,7 +64,8 @@ subtitle {
 .nav-list {
   display: flex;
   flex-flow: row wrap;
-  gap: 2rem;
+  gap: 1.3rem;
+  padding:0;
   top: auto;
   list-style: none;
   align-content: end;
@@ -72,11 +73,12 @@ subtitle {
   /* font-family: 'Poppins', sans-serif; */
 } 
 footer {
-  text-align: end;
+  text-align: center;
   color: black;
   display: block;
   margin: 2rem 0 1.38rem;
   padding: 0;
+  font-size: .9rem;
 }
 /* 
 .nav-item {
@@ -223,6 +225,7 @@ footer {
 
 .chaos-ddames {
   /* background-image: url('../assets/img/ChaosOracleDuDames.jpg');  */
+  alt: "Chaos Oracle Du Dames";
   background-size: cover;
   }
 
