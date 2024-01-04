@@ -1,4 +1,6 @@
 // load DOM before running script
+"use strict";
+
 document.addEventListener("DOMContentLoaded", function(){console.log('DOMloaded') });
 
 // initialize modals
