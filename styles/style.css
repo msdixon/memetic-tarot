@@ -14,10 +14,10 @@ body {
   color: black;
   display: block;
 }
-img {
+/* img {
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
@@ -127,9 +127,9 @@ footer {
   position: static;
 }
 
-/* ||original card styling */
+/* ||card container styling */
  .card {
-  width: 220px;
+  width: 230px;
   height: 400px;
   display: flex;
   /* border: 5px ridge black; */
