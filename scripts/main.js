@@ -14,7 +14,7 @@ let cardImages = document.querySelectorAll(".card_img");
 // create array of tarot images for the cards to shuffle through
 // let tarotImages = ["assets/img/AceCoups1760.jpeg", "assets/img/06BolonaisAllaTorre.jpeg", "assets/img/AceCupsVSf.jpeg", "assets/img/09CupsVsf.jpeg", "assets/img/Sola_Busca_Cups10.jpeg", "assets/img/KingCupsPiedmontese.jpg", "assets/img/AceOfCupsFlickr.jpg", "assets/img/ThreeCupsRWS.jpg", "assets/img/TarokkKartya_Barely_09Cup.jpg", "assets/img/Bembo-Visconti-KnaveOfCups.jpg", "assets/img/Sola_Busca_Cups06.jpeg", "assets/img/ChaosOracleDuDames.jpg", "assets/img/Sola_Busca_Cups02.jpg", "assets/img/MinchiateCups04.jpg", "assets/img/Etteilla-QueenCups.jpeg", "assets/img/FiveCupsRWS.jpg", "assets/img/FrenchTarotWedding.jpeg", "assets/img/Cups02.jpg", "assets/img/Minchiate03Cups.jpeg"];
 let tarotImages = [
-  {src: "assets/img/AceCoups1760.jpeg", alt: "Ace de Coups, an 18th century tarot card", cardNumberValue: "1", suit: "Cups", modal: "modal1" },
+  {src: "assets/img/AceCoups1760.jpeg", alt: "Ace de Coups, an 18th century tarot card", cardNumberValue: "1", suit: "Cups", modal: "modal-1" },
   {src: "assets/img/AceOfCupsFlickr.jpg", alt: "Ace of Cups from Rider-Waite-Smith tarot deck, two interlocking standing figures hold cups to the sky", cardNumberValue: "1", suit: "Cups", modal: "modal2" },
   {src: "assets/img/06BolonaisAllaTorre.jpeg", alt: "Six of Cups, from the Bolonais Alla Torre tarot deck" },
   {src: "assets/img/AceCupsVSf.jpeg", alt: "Ace of Cups from the Vincenti-Sforza tarot deck, one gold cup filled with a gold baton with an angel figure at the top" },
@@ -61,7 +61,8 @@ window.onload = function(){
     // set the src attribute of image to random image
     cardImages.src= randomImage.src;
     cardImages.alt= randomImage.alt;
-    
+    // set modal id to relative card image
+    // button.setAttribute('data-micromodal-trigger', randomImage.modal);
   }); 
   });
 }
