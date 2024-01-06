@@ -72,7 +72,7 @@ subtitle {
   text-align: end;
   /* font-family: 'Poppins', sans-serif; */
 } 
-footer {
+header, footer {
   text-align: center;
   color: black;
   display: block;
