@@ -38,7 +38,7 @@
     right: 0;
     bottom: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background: rgba(0,0,0,0.65);
   }
@@ -82,3 +82,91 @@
   opacity: .2;
   /* transform: scale(2,2) skewY(1deg); */
 }
+
+.modal-content {
+  cursor: pointer;
+}
+.aceCupsRWS{
+  text-align: center;
+}
+
+.aceCupsVSf{
+  text-align: center;
+}
+
+.aceCupsConver{
+  text-align: center;
+}
+
+.Cups02RWS{
+  text-align: center;
+}
+
+.Cups02SB{
+  text-align: center;
+}
+
+.Cups03Min{
+  text-align: center;
+}
+
+.Cups04RWS{
+  text-align: center;
+}
+
+.Cups04Min{
+  text-align: center;
+}
+
+.Cups05RWS{
+  text-align: center;
+}
+
+.Cups06BaT{
+  text-align: center;
+}
+
+.Cups07SB{
+  text-align: center;
+}
+
+.Cups08SB{
+  text-align: center;
+}
+
+.Cups09TK{
+  text-align: center;
+}
+
+.Cups09VSf{
+  text-align: center;
+}
+
+.Cups10SB{
+  text-align: center;
+}
+
+.ChaosEtt{
+  text-align: center;
+}
+
+.PageCupsWedd{
+  text-align: center;
+}
+
+.PageCupsBV{
+  text-align: center;
+}
+
+.QueenCupsEtt{
+  text-align: center;
+}
+
+.KingCupsP{
+  text-align: center;
+}
+
+
+
+
+
