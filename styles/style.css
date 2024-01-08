@@ -14,10 +14,7 @@ body {
   color: black;
   display: block;
 }
-/* img {
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
+
 
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
@@ -43,7 +40,7 @@ h4 {font-size: 1.563rem; color: rgb(2, 93, 103); text-align: center; position: r
 h5 {font-size: 1.25rem; color:  rgb(2, 93, 103); text-align: center; position: relative;}
 
 p {
-  margin: 0 0 1.38rem;
+  /* margin: 0 0 1.38rem; */
   font-size: 1.25rem;
   line-height: 1.75;
   color: black;
@@ -51,12 +48,12 @@ p {
  
 }
 
-subtitle {
+/* subtitle {
   align-content: end;
   justify-content: end;
   text-align: center;
   container-type: flex;
-}
+} */
 
 .small, .text_small {font-size: 0.8rem;}
 
@@ -70,15 +67,26 @@ subtitle {
   list-style: none;
   align-content: end;
   text-align: end;
+  justify-content: end;
+  width: 99%;
   /* font-family: 'Poppins', sans-serif; */
 } 
 header, footer {
   text-align: center;
   color: black;
-  display: block;
-  margin: 2rem 0 1.38rem;
+  display: flex;
+  /* margin: auto; */
   padding: 0;
   font-size: .9rem;
+  position: absolute;
+}
+
+footer{
+  display:flex;
+  justify-content: flex-end;
+  align-content: end;
+  text-align: end;
+  width: 97%;
 }
 /* 
 .nav-item {
@@ -95,7 +103,7 @@ header, footer {
 }
 
 .flex-grid {
-  flex: 1 1 30ch
+  flex: 1 1 30ch;
 }
 
 /* main interaction button to initiate reshuffle action*/
@@ -145,8 +153,8 @@ header, footer {
  }
 
 .one {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  /* flex-wrap: wrap; */
   justify-content: center;
 }
 

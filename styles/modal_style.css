@@ -38,7 +38,7 @@
     right: 0;
     bottom: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background: rgba(0,0,0,0.65);
   }
@@ -80,90 +80,89 @@
 .card:hover {
   background: blue;
   opacity: .2;
-  /* transform: scale(2,2) skewY(1deg); */
 }
 
 .modal-content {
   cursor: pointer;
 }
 .aceCupsRWS{
-  text-align: center;
+  text-align: match-parent;
 }
 
 .aceCupsVSf{
-  text-align: center;
+  text-align: match-parent;
 }
 
 .aceCupsConver{
-  text-align: center;
+  text-align: match-parent;
 }
 
 .Cups02RWS{
-  text-align: center;
+  text-align: match-parent;
 }
 
 .Cups02SB{
-  text-align: center;
+  text-align: match-parent;;
 }
 
 .Cups03Min{
-  text-align: center;
+  text-align: match-parent;;
 }
 
 .Cups04RWS{
-  text-align: center;
+  text-align: match-parent;;
 }
 
 .Cups04Min{
-  text-align: center;
+  text-align: match-parent;;
 }
 
 .Cups05RWS{
-  text-align: center;
+  text-align: match-parent;
 }
 
 .Cups06BaT{
-  text-align: center;
+  text-align: match-parent;;
 }
 
 .Cups07SB{
-  text-align: center;
+  text-align: match-parent;
 }
 
 .Cups08SB{
-  text-align: center;
+  text-align: match-parent;
 }
 
 .Cups09TK{
-  text-align: center;
+  text-align: match-parent;;
 }
 
 .Cups09VSf{
-  text-align: center;
+  text-align: match-parent;
 }
 
 .Cups10SB{
-  text-align: center;
+  text-align: match-parent;
 }
 
 .ChaosEtt{
-  text-align: center;
+  text-align: match-parent;
 }
 
 .PageCupsWedd{
-  text-align: center;
+  text-align: match-parent;
 }
 
 .PageCupsBV{
-  text-align: center;
+  text-align: match-parent;
 }
 
 .QueenCupsEtt{
-  text-align: center;
+  text-align: match-parent;
 }
 
 .KingCupsP{
-  text-align: center;
+  text-align: match-parent;
 }
 
 

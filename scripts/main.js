@@ -57,13 +57,14 @@ window.onload = function(){
   // select shuffle action button
   let shuffleButton = document.querySelector('.shuffle-button');
   // add event listener to button
-  shuffleButton.addEventListener('click', function() {
+  shuffleButton.addEventListener('click', function shuffleImagesAndContent() {
+    // create copy of tarot images array here instead
+    let tarotImagesCopy = [...tarotImages];
   // select all card containers
     let cardContainers = document.querySelectorAll('.card');
-  // create copy of tarot images array here instead
-    let tarotImagesCopy = [...tarotImages];
+  
   // loop through card containers
-    cardContainers.forEach(function(card){
+    cardContainers.forEach(function(card, index){
        // If tarotImagesCopy is exhausted, refill it
     if (tarotImagesCopy.length <= 4) {
       tarotImagesCopy = [...tarotImages];
@@ -75,7 +76,7 @@ window.onload = function(){
     tarotImagesCopy.splice(randomIndex, 1);
     // Inside the loop, create an image element
     let cardImages = card.querySelector('.card_img');
-    // set the src attribute of image to random image
+    // set the src attribute & alt of image to random image
     cardImages.src= randomImage.src;
     cardImages.alt= randomImage.alt;
  
@@ -83,25 +84,57 @@ window.onload = function(){
     if (buttonTrigger) {
       buttonTrigger.forEach((button) => {
       button.setAttribute('data-micromodal-trigger', randomImage.modalId);
-    })} else {
+    })
+    } else {
       console.log("no button");
     }
-       // // set modal id to relative card image
-    let modals = document.querySelectorAll('.micromodal');
-    if (modals) {
-      modals.forEach((modal, index) => {
+
+    // try new method of setting modal id but remain unconvinced
+    let modal = card.querySelector('.micromodal');
+    if (modal) {
       modal.id = 'modalId' + index;
+      let uniqueModalContent = randomImage.modalContent;
       let contentElements = modal.querySelectorAll('.modal-content');
       if (contentElements) {
         contentElements.forEach(contentElement => {
-        contentElement.innerHTML = randomImage.modalContent;
-      });
-      };
-    }); 
-  } else {
-      console.log("no modal id");
+          contentElement.innerHTML = uniqueModalContent;
+        });
+      }
+    }
+  })
+});
+
+console.log("shuffle button");
+}
+
+// Call shuffleImagesAndContent when the shuffle button is clicked
+  // let shuffleButton = document.querySelector('#shuffle-button');
+  // shuffleButton.addEventListener('click', shuffleImagesAndContent);
+
+       // // set modal id to relative card image
+  //   let modals = document.querySelectorAll('.micromodal');
+  //   if (modals) {
+  //     modals.forEach((modal, index) => {
+  //       // select random image modal id
+  //       const randomIndex = Math.floor(Math.random() * tarotImagesCopy.length);
+  //       const randomImage = tarotImagesCopy[randomIndex];
+  //       if (tarotImagesCopy.length <= 4) {
+  //        tarotImagesCopy = [...tarotImages];
+  // }
+  //       tarotImagesCopy.splice(randomIndex, 1);
+  //     modal.id = 'modalId' + index;
+  //     let uniqueModalContent = randomImage.modalContent;
+  //     let contentElements = modal.querySelectorAll('.modal-content');
+  //     if (contentElements) {
+  //       contentElements.forEach(contentElement => {
+  //       contentElement.innerHTML = uniqueModalContent;
+      // };
+      // };
+    // }); 
+  // } else {
+  //     console.log("no modal id");
     
-  }
+  // }
   // set modal content to relative card 
   
     // let contentElement = modal.querySelectorAll('.modal-content');
@@ -124,9 +157,11 @@ window.onload = function(){
     // }
    
     
-  }); 
-  });
+  // }
+  // ); 
+  // });
 
 
-console.log("shuffle button");
-}
+// console.log("shuffle button");
+// }
+// }
