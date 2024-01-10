@@ -22,19 +22,18 @@ let tarotImages = [
   {index:3, src: "assets/img/AceCupsVSf.jpeg", alt: "Ace of Cups from the Vincenti-Sforza tarot deck, one gold cup filled with a gold baton with an angel figure at the top", modalId: "aceCupsVSf", modalContent: "Suit  : Cups </p> <p> Value  : Ace (1)</p> <p> Plot : blessings, abundance, grit, auspices, small miracles</p> <p> Character : artistic, creative, dynamic leader</p> <p> Energy/setting : water</p>" },
   {index:4, src: "assets/img/Cups02.jpg", alt: "Two of Cups from the Rider-Waite-Smith tarot deck", cardNumberValue: "2", suit: "Cups", modalId: "#Cups02RWS", modalContent: "Suit  : Cups </p> <p> Value  : Two (2)</p> <p> Plot : partnership, union, love, friendship, harmony, balance</p> <p> Character : romantic, idealistic, diplomatic, sensitive</p> <p> Energy/setting : water</p>" },
   {index:5, src: "assets/img/Sola_Busca_Cups02.jpg", alt: "Two of cups from the Sola Busca tarot deck", modalId:"Cups02SB", modalContent: "Suit  : Cups </p> <p> Value  : Two (2)</p> <p> Plot : partnership, union, love, friendship, harmony, balance</p> <p> Character : romantic, idealistic, diplomatic, sensitive</p> <p> Energy/setting : water</p>" }, 
-  {index:6, src: "assets/img/ThreeCupsRWS.jpg", alt: "Three of Cups from the Rider-Waite-Smith tarot deck, with three robed figures holding cups up to the sky facing each other", modalId:"Cups03RWS", modalContent: "Suit  : Cups </p> <p> Value  : Three</p> <p> Plot :offerings, rewards, fruiting plants, gifts, sharing</p> <p> Character : gardener, community leader, one tender-of-spirit</p> <p> Energy/setting : water"  }, 
-  {index:7, src: "assets/img/Minchiate03Cups.jpeg", alt: "Three of Cups from the Minchiate tarot deck, with three illustrated cups in a triangle pattern and a sitting monkey holding their hand outstretched in the center", modalId:"Cups03Min", modalContent: "Suit  : Cups </p> <p> Value  : Three</p> <p> Plot :offerings, rewards, fruiting plants, gifts, sharing</p> <p> Character : gardener, community leader, one tender-of-spirit</p> <p> Energy/setting : water"  },
-  {index:8, src: "assets/img/MinchiateCups04.jpg", alt: "Four of Cups from the Minchiate tarot deck", modalId:"Cups04RWS", modalContent: "Suit  : Cups  <p> Value  : Four <p> Plot : imagination, satisfaction, intuition, relationships</p> <p> Character : friendliness, calm waters, love-struck, focused on balance, caring</p> <p> Energy/setting : water</p>"}, 
-  {index:9, src: "assets/img/FiveCupsRWS.jpg", alt: "Five of Cups from the Rider-Waite-Smith tarot deck", modalId:"Cups05RWS", modalContent: "Suit  : Cups </p> <p> Value  : Five</p> <p> Plot : alienation, sadness, poor harvest </p> <p> Character : misanthrope, traumatized, low self-care</p> <p> Energy/setting : water"  },
-  {index:10, src: "assets/img/06BolonaisAllaTorre.jpeg", alt: "Six of Cups, from the Bolonais Alla Torre tarot deck", modalId: "Cups06BaT", modalContent: "Suit  : Cups <p> Value  : Six <p> Plot : culmination, memories, healing, enjoying pleasure after a life trial <p> Character : steeped in neediness, nostalgia,  <p> Energy/setting : water</p>" },
-  {index:11, src: "assets/img/Sola_Busca_Cups06.jpeg", alt: "Seven of Cups from the Sola Busca tarot deck", modalId: "Cups07SB", modalContent: "Suit  : Cups </p> <p> Value  : Seven</p> <p> Plot : illusions, fantasy worlds, routes to escape, disappointment </p> <p> Character : daydream believer, activist, sponsor/grantor </p> <p> Energy/setting : water</p>"  },
+  {index:6, src: "assets/img/ThreeCupsRWS.jpg", alt: "Three of Cups from the Rider-Waite-Smith tarot deck, with three robed figures holding cups up to the sky facing each other", modalId:"Cups03RWS", modalContent: "Suit  : Cups </p> <p> Value  : Three (3) </p> <p> Plot :offerings, rewards, fruiting plants, gifts, sharing</p> <p> Character : gardener, community leader, one tender-of-spirit</p> <p> Energy/setting : water"  }, 
+  {index:7, src: "assets/img/Minchiate03Cups.jpeg", alt: "Three of Cups from the Minchiate tarot deck, with three illustrated cups in a triangle pattern and a sitting monkey holding their hand outstretched in the center", modalId:"Cups03Min", modalContent: "Suit  : Cups </p> <p> Value  : Three (3) </p> <p> Plot :offerings, rewards, fruiting plants, gifts, sharing</p> <p> Character : gardener, community leader, one tender-of-spirit</p> <p> Energy/setting : water"  },
+  {index:8, src: "assets/img/MinchiateCups04.jpg", alt: "Four of Cups from the Minchiate tarot deck", modalId:"Cups04RWS", modalContent: "Suit  : Cups </p> <p> Value  : Four (4) <p> Plot : imagination, satisfaction, intuition, relationships</p> <p> Character : friendliness, calm waters, love-struck, focused on balance, caring</p> <p> Energy/setting : water</p>"}, 
+  {index:9, src: "assets/img/FiveCupsRWS.jpg", alt: "Five of Cups from the Rider-Waite-Smith tarot deck", modalId:"Cups05RWS", modalContent: "Suit  : Cups </p> <p> Value  : Five (5) </p> <p> Plot : alienation, sadness, poor harvest </p> <p> Character : misanthrope, traumatized, low self-care</p> <p> Energy/setting : water"  },
+  {index:10, src: "assets/img/06BolonaisAllaTorre.jpeg", alt: "Six of Cups, from the Bolonais Alla Torre tarot deck", modalId: "Cups06BaT", modalContent: "Suit  : Cups </p> <p> Value  : Six (6)<p> Plot : culmination, memories, healing, enjoying pleasure after a life trial <p> Character : steeped in neediness, nostalgia,  <p> Energy/setting : water</p>" },
+  {index:11, src: "assets/img/Sola_Busca_Cups06.jpeg", alt: "Seven of Cups from the Sola Busca tarot deck", modalId: "Cups07SB", modalContent: "Suit  : Cups </p> <p> Value  : Seven</p> (7) <p> Plot : illusions, fantasy worlds, routes to escape, disappointment </p> <p> Character : daydream believer, activist, sponsor/grantor </p> <p> Energy/setting : water</p>"  },
   // TODO: clean up 8s and 9s in repo
-  // {src: "assets/img/TarokkKartya_Barely_09Cup.jpg", alt: "Nine of Cups from the Tarokk Kartya card deck, with a reflected figure of a couple dancing outside, and on the reflection a couple in a field with an animal, one person drinking from a cup and the other selecting items from a fruit cart", modal:"09CupsTK" }, 
-  // {src: "assets/img/09CupsVsf.jpeg", alt:  "Nine of Cups from the Vincenti-Sforza tarot deck", modal: "09CupsVSf" }, 
-  // {src: "assets/img/Sola_Busca_Cups10.jpeg", alt: "Ten of Cups from the Sola Busca tarot deck", modal: "10CupsSB" },
-  // {src: "assets/img/KingCupsPiedmontese.jpg", alt: "King of Cups from the Piedmontese tarot deck", modal: "KingCupsP" }, 
-  // {src: "assets/img/Bembo-Visconti-KnaveOfCups.jpg", alt: "Page of Cups from the 15th century Bembo-Visconti tarot deck, with a figure of a young person in regal dress standing and holding a cup with arm outstretched", modal:"PageCupsBV" }, 
- 
+  {index:12, src: "assets/img/TarokkKartya_Barely_09Cup.jpg", alt: "Nine of Cups from the Tarokk Kartya card deck, with a reflected figure of a couple dancing outside, and on the reflection a couple in a field with an animal, one person drinking from a cup and the other selecting items from a fruit cart", modal:"09CupsTK", modalContent: "Suit  : Cups </p> <p> Value  : Nine (9) </p> <p> Plot :Success, winning awards, overcoming challenges</p> <p> Character : happy-go-lucky, optimistic, compassionate</p> <p> Energy/setting : water" }, 
+  {index:13, src: "assets/img/09CupsVsf.jpeg", alt:  "Nine of Cups from the Vincenti-Sforza tarot deck", modal: "09CupsVSf", modalContent: "Suit  : Cups </p> <p> Value  : Nine (9) </p> <p> Plot :Success, winning awards, overcoming challenges</p> <p> Character : happy-go-lucky, optimistic, compassionate</p> <p> Energy/setting : water" }, 
+  {insex:14, src: "assets/img/Sola_Busca_Cups10.jpeg", alt: "Ten of Cups from the Sola Busca tarot deck", modal: "10CupsSB", modalContent: "Suit  : Cups </p> <p> Value  : Ten (10) </p> <p> Plot : fulfillment, restoration, family abundance, connection to community </p> <p> Character : content, connected, fulfilled, satisfied</p> <p> Energy/setting : water" },
+  {index:15, src: "assets/img/Bembo-Visconti-KnaveOfCups.jpg", alt: "Page of Cups from the 15th century Bembo-Visconti tarot deck, with a figure of a young person in regal dress standing and holding a cup with arm outstretched", modal:"PageCupsBV", modalContent:"Suit : Cups </p> <p> Value  : Face|Page </p> <p> Plot : meditation activities, therapy, self-exploration</p> <p> Character : empathetic, emotion-driven, sweet, sensitive, </p> <p> Energy/setting : water" }, 
+  {index:16,src: "assets/img/KingCupsPiedmontese.jpg", alt: "King of Cups from the Piedmontese tarot deck", modal: "KingCupsP" }, 
   {index:17, src: "assets/img/ChaosOracleDuDames.jpg", alt: "Chaos Major Arcana card from the Oracle Du Dames tarot deck, with abstract circles in red, blue, green, and yellow", modalId:"ChaosEtt", modalContent: "Suit  : Major Arcana </p> <p> Value  : CHAOS </p> <p> Plot : randomness, chaos, deconstruction, unexpected news</p> <p> Character : frenemy, foil, romantic rival, unmanageable leader</p> <p> Energy/setting : water</p>"}, 
   {index:18, src: "assets/img/Etteilla-QueenCups.jpeg", alt: "Queen of Cups from Eitteilla's Tarot du Thot (Thoth)", modalId:"QueenCupsEtt", modalContent: "Suit  : Cups </p> <p> Value  : Queen</p> <p> Plot : bearing witness, consultation, instinctive messages, relationship triage</p> <p> Character : empathy, understanding, compassion, listening</p> <p> Energy/setting : water</p></div>", }, 
  
@@ -62,11 +61,11 @@ window.onload = function(){
     // re-initialize Micromodal 
     MicroModal.init({
       onShow: modal => console.info(`${modal.id} is shown`),
-      onClose: modal => console.info(`${modal.id} is hidden`),
+      // onClose: modal => console.info(`${modal.id} is hidden`),
       // openTrigger: 'data-micromodal-trigger',
-      // closeTrigger: 'data-micromodal-close',
+      closeTrigger: 'data-micromodal-close',
       disableScroll: true,
-      openClass: 'is-open',
+      // openClass: 'is-open',
       awaitOpenAnimation: true, 
       awaitCloseAnimation: false,
     });
@@ -95,12 +94,14 @@ window.onload = function(){
     // try new method of setting modal id but remain unconvinced
     let modal = card.querySelector('.micromodal_container');
     if (modal) {
-      modal.id = 'modalId';;
+      modal.id = 'modalId';
+      modal.setAttribute('id', randomImage.modalId);
       let uniqueModalContent = randomImage.modalContent;
       let contentElements = modal.querySelectorAll('.modal-content');
       if (contentElements) {
         contentElements.forEach(contentElement => {
           contentElement.innerHTML = uniqueModalContent;
+
         });
       }
     }
