@@ -36,8 +36,7 @@ let tarotImages = [
   {index:16,src: "assets/img/KingCupsPiedmontese.jpg", alt: "King of Cups from the Piedmontese tarot deck", modal: "KingCupsP" }, 
   {index:17, src: "assets/img/ChaosOracleDuDames.jpg", alt: "Chaos Major Arcana card from the Oracle Du Dames tarot deck, with abstract circles in red, blue, green, and yellow", modalId:"ChaosEtt", modalContent: "Suit  : Major Arcana </p> <p> Value  : CHAOS </p> <p> Plot : randomness, chaos, deconstruction, unexpected news</p> <p> Character : frenemy, foil, romantic rival, unmanageable leader</p> <p> Energy/setting : water</p>"}, 
   {index:18, src: "assets/img/Etteilla-QueenCups.jpeg", alt: "Queen of Cups from Eitteilla's Tarot du Thot (Thoth)", modalId:"QueenCupsEtt", modalContent: "Suit  : Cups </p> <p> Value  : Queen</p> <p> Plot : bearing witness, consultation, instinctive messages, relationship triage</p> <p> Character : empathy, understanding, compassion, listening</p> <p> Energy/setting : water</p></div>", }, 
- 
-  // {src: "assets/img/FrenchTarotWedding.jpeg", alt: "Page of Cups from the French Wedding tarot deck", modal:"PageCupsWedd" }, 
+  {index:19, src: "assets/img/FrenchTarotWedding.jpeg", alt: "Page of Cups from the French Wedding tarot deck", modal:"PageCupsWedd", modalContent:"Suit : Cups </p> <p> Value  : Face|Page </p> <p> Plot : meditation activities, therapy, self-exploration</p> <p> Character : empathetic, emotion-driven, sweet, sensitive, </p> <p> Energy/setting : water" }, 
   
 ];
 
@@ -47,11 +46,12 @@ window.onload = function(){
   let shuffleButton = document.querySelector('.shuffle-button');
   // add event listener to button
   shuffleButton.addEventListener('click', function shuffleImagesAndContent() {
+   
     // create copy of tarot images array here instead
     let tarotImagesCopy = [...tarotImages];
   // select all card containers
     let cardContainers = document.querySelectorAll('.card');
-  
+    
   // loop through card containers
     cardContainers.forEach(function(card, index){
        // If tarotImagesCopy is exhausted, refill it
@@ -68,7 +68,9 @@ window.onload = function(){
       // openClass: 'is-open',
       awaitOpenAnimation: true, 
       awaitCloseAnimation: false,
+
     });
+    
     // Inside the loop, generate a random index based on the length of the image array.
     const randomIndex = Math.floor(Math.random() * tarotImagesCopy.length);
     const randomImage = tarotImagesCopy[randomIndex];
@@ -87,17 +89,34 @@ window.onload = function(){
     if (buttonTrigger) {
       buttonTrigger.forEach((button) => {
       button.setAttribute('data-micromodal-trigger', randomImage.modalId);
+      button.setAttribute('data-micromodal-close', "false");
     })} else {
       console.log("no button");
     }
 
     // try new method of setting modal id but remain unconvinced
-    let modal = card.querySelector('.micromodal_container');
-    if (modal) {
-      modal.id = 'modalId';
-      modal.setAttribute('id', randomImage.modalId);
+    let modals = document.querySelectorAll('.micromodal_container');
+    if (modals) {
+      modals.forEach((modal, index) => {
+        let randomImageId = tarotImages[index];
+        modal.setAttribute('id', randomImageId.modalId);
+        MicroModal.show(randomImage.modalId);
+      });
+      // re-initialize Micromodal
+      MicroModal.init({
+        onShow: modal => console.info(`${modal.id} is shown`),
+        // onClose: modal => console.info(`${modal.id} is hidden`),
+        // openTrigger: 'data-micromodal-trigger',
+        closeTrigger: 'data-micromodal-close',
+        disableScroll: true,
+        // openClass: 'is-open',
+        awaitOpenAnimation: true, 
+        awaitCloseAnimation: false,
+      });
+
+      // modal.id = 'modalId';
       let uniqueModalContent = randomImage.modalContent;
-      let contentElements = modal.querySelectorAll('.modal-content');
+      let contentElements = document.querySelectorAll('.modal-content');
       if (contentElements) {
         contentElements.forEach(contentElement => {
           contentElement.innerHTML = uniqueModalContent;

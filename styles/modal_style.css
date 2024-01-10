@@ -45,7 +45,7 @@
   
   .micromodal__container {
     box-sizing: border-box;
-    overflow-y: auto;
+    overflow-y: scroll;
     max-width: 500px;
     max-height: 100vh;
     padding: 30px;
@@ -85,7 +85,7 @@
 .modal-content {
   cursor: pointer;
 }
-/* .aceCupsRWS{
+.aceCupsRWS{
   text-align: match-parent;
 }
 
@@ -163,7 +163,7 @@
 
 .KingCupsP{
   text-align: match-parent;
-} */
+}
 
 
 
