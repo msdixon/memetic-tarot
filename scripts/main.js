@@ -5,22 +5,12 @@ document.addEventListener("DOMContentLoaded", function(){console.log('DOMloaded'
 
 // initialize modals
 MicroModal.init({
-  onShow: modal => console.info(`${modal.id} is shown`), // [1]
-  // onClose: modal => console.info(`${modal.id} is hidden`), // [2]
-  // openTrigger: 'data-custom-open', // [3]
-  // closeTrigger: 'data-custom-close', // [4]
-  // openClass: 'is-open', // [5]
-  // disableScroll: true, // [6]
-  // disableFocus: false, // [7]
-  // awaitOpenAnimation: false, // [8]
-  // awaitCloseAnimation: false, // [9]
-  // debugMode: true, // [10]
-  disableScroll: true
+  disableScroll: false,
   });
+
 console.log("modalsLoaded");
 // declare modal variables
 // let tarotImageModal = document.querySelectorAll(".micromodal.id");
-
 
 // declare card containers and card image variables 
 let cardImages = document.querySelectorAll(".card_img");
@@ -69,6 +59,17 @@ window.onload = function(){
     if (tarotImagesCopy.length <= 4) {
       tarotImagesCopy = [...tarotImages];
     }
+    // re-initialize Micromodal 
+    MicroModal.init({
+      onShow: modal => console.info(`${modal.id} is shown`),
+      onClose: modal => console.info(`${modal.id} is hidden`),
+      // openTrigger: 'data-micromodal-trigger',
+      // closeTrigger: 'data-micromodal-close',
+      disableScroll: true,
+      openClass: 'is-open',
+      awaitOpenAnimation: true, 
+      awaitCloseAnimation: false,
+    });
     // Inside the loop, generate a random index based on the length of the image array.
     const randomIndex = Math.floor(Math.random() * tarotImagesCopy.length);
     const randomImage = tarotImagesCopy[randomIndex];
@@ -80,19 +81,21 @@ window.onload = function(){
     cardImages.src= randomImage.src;
     cardImages.alt= randomImage.alt;
  
+    
+
+// set modal id to relative card image
     let buttonTrigger = document.querySelectorAll('.open');
     if (buttonTrigger) {
       buttonTrigger.forEach((button) => {
       button.setAttribute('data-micromodal-trigger', randomImage.modalId);
-    })
-    } else {
+    })} else {
       console.log("no button");
     }
 
     // try new method of setting modal id but remain unconvinced
-    let modal = card.querySelector('.micromodal');
+    let modal = card.querySelector('.micromodal_container');
     if (modal) {
-      modal.id = 'modalId' + index;
+      modal.id = 'modalId';;
       let uniqueModalContent = randomImage.modalContent;
       let contentElements = modal.querySelectorAll('.modal-content');
       if (contentElements) {
