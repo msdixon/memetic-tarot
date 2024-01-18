@@ -47,80 +47,76 @@ window.onload = function(){
   // select shuffle action button
   let shuffleButton = document.querySelector('.shuffle-button');
   // add event listener to shuffle button
-  shuffleButton.addEventListener('click', function shuffleImagesAndContent() {
-    // create copy of tarot images array here instead
-    let tarotImagesCopy = [...tarotImages];
-  // select all card containers
-    let cardContainers = document.querySelectorAll('.card');
-    
-  // loop through card containers
-    cardContainers.forEach(function(card, index){
-       // If tarotImagesCopy is exhausted, refill it
-    if (tarotImagesCopy.length <= 4) {
-      tarotImagesCopy = [...tarotImages];
-    }
-    // re-initialize Micromodal 
-    MicroModal.init({
-      disableScroll: true,
-    });
-    
-    // Inside the loop, generate a random index based on the length of the image array.
-    const randomIndex = Math.floor(Math.random() * tarotImagesCopy.length);
-    const randomImage = tarotImagesCopy[randomIndex];
-    // remove the image from the array
-    tarotImagesCopy.splice(randomIndex, 1);
-    // Inside the loop, create an image element
-    let cardImages = card.querySelector('.card_img');
-    // set the src attribute & alt of image to random image
-    cardImages.src= randomImage.src;
-    cardImages.alt= randomImage.alt;
- 
-    
+    shuffleButton.addEventListener('click', function shuffleImagesAndContent() {
+      // create copy of tarot images array here instead
+      let tarotImagesCopy = [...tarotImages];
+    // select all card containers
+      let cardContainers = document.querySelectorAll('.card');
+      
+    // loop through card containers
+      cardContainers.forEach(function(card, index){
+         // If tarotImagesCopy is exhausted, refill it
+      if (tarotImagesCopy.length <= 4) {
+        tarotImagesCopy = [...tarotImages];
+      }
+      // Inside the loop, generate a random index based on the length of the image array.
+      const randomIndex = Math.floor(Math.random() * tarotImagesCopy.length);
+      const randomImage = tarotImagesCopy[randomIndex];
+      // remove the image from the array
+      tarotImagesCopy.splice(randomIndex, 1);
+      // Inside the loop, create an image element
+      let cardImages = card.querySelector('.card_img');
+      // set the src attribute & alt of image to random image
+      cardImages.src= randomImage.src;
+      cardImages.alt= randomImage.alt;
 
-// set modal id to default relative card image
-    let buttonTrigger = card.querySelectorAll('.open');
-    if (buttonTrigger) {
-      buttonTrigger.forEach((button) => {
-      button.addEventListener('click', function() {
-        let body = document.querySelector('body');
-        if (body.classList.contains('is-open')) {
-          body.setAttribute('aria-hidden', "false");
-        } else {
-          console.log("class list does not contain is-open");
-        }
-        if (MicroModal.activeModal) {
-        // Close any open modals
-          MicroModal.close();
-        }
-        // Open modal
-        MicroModal.show(randomImage.modalId);
-      });
-    });
-    }
-      // Check if a modal is open by checking if the body has the class 'is-open' and if so set aria-hidden to false
-    
-    // set modal id in DOM data to relative card image
-    let modals = document.querySelectorAll('.micromodal');
-    if (modals) {
-      modals.forEach((modal) => {
-        modal.setAttribute('id', randomImage.modalId);
-        // update modal content
-        let uniqueModalContent = randomImage.modalContent;
-        let contentElement = modal.querySelector('.modal-content');
-        if (contentElement) {
-            contentElement.innerHTML = uniqueModalContent;
-          }
-      });
-
-      // re-initialize Micromodal
+      // re-initialize Micromodal 
       MicroModal.init({
-        onShow: modal => console.info(`${modal.id} is shown`),
         disableScroll: true,
       });
-      
-    }
-  })
-});
+  // set modal id to default relative card image
+      let buttonTrigger = card.querySelectorAll('.open');
+      if (buttonTrigger) {
+        buttonTrigger.forEach((button) => {
+        button.addEventListener('click', function() {
+           // set modal id in DOM data to relative card image
+      let modals = document.querySelectorAll('.micromodal');
+      if (modals) {
+        modals.forEach((modal) => {
+          modal.setAttribute('id', randomImage.modalId);
+          // update modal content
+          let uniqueModalContent = randomImage.modalContent;
+          let contentElement = modal.querySelector('.modal-content');
+          if (contentElement) {
+              contentElement.innerHTML = uniqueModalContent;
+            }
+        });
+      }
+      //  Check if a modal is open by checking if the body has the class 'is-open' and if so set aria-hidden to false
+          let body = document.querySelector('body');
+          if (body.classList.contains('is-open')) {
+            body.setAttribute('aria-hidden', "false");
+          } else {
+            console.log("class list does not contain is-open");
+          }
+          if (MicroModal.activeModal) {
+          // Close any open modals
+            MicroModal.close();
+          }
+          // Open modal
+          // MicroModal.show(randomImage.modalId);
+        });
+      });
+      }
+        // re-initialize Micromodal
+        MicroModal.init({
+          onShow: modal => console.info(`${modal.id} is shown`),
+          disableScroll: true,
+        });
+        
+      });
+    // }) // Remove this line
+  });
 
-console.log("shuffle button");
-}
+  console.log("shuffle button");
+  }
