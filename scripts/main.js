@@ -34,11 +34,11 @@ let tarotImages = [
   {index:12, title: "Nine of Cups", src: "assets/img/TarokkKartya_Barely_09Cup.jpg", alt: "Nine of Cups from the Tarokk Kartya card deck, with a reflected figure of a couple dancing outside, and on the reflection a couple in a field with an animal, one person drinking from a cup and the other selecting items from a fruit cart", modalId:"09CupsTK", modalContent: "<p>Suit  : Cups </p> <p> Value  : Nine (9) </p> <p> Plot :Success, winning awards, overcoming challenges</p> <p> Character : happy-go-lucky, optimistic, compassionate</p> <p> Energy/setting : water</p> " }, 
   {index:13, title: "Nine of Cups", src: "assets/img/09CupsVsf.jpeg", alt:  "Nine of Cups from the Vincenti-Sforza tarot deck", modalId: "09CupsVSf", modalContent: "<p>Suit  : Cups </p> <p> Value  : Nine (9) </p> <p> Plot :Success, winning awards, overcoming challenges</p> <p> Character : happy-go-lucky, optimistic, compassionate</p> <p> Energy/setting : water </p> " }, 
   {insex:14, title: "Ten of Cups", src: "assets/img/Sola_Busca_Cups10.jpeg", alt: "Ten of Cups from the Sola Busca tarot deck", modalId: "10CupsSB", modalContent: "<p>Suit  : Cups </p> <p> Value  : Ten (10) </p> <p> Plot : fulfillment, restoration, family abundance, connection to community </p> <p> Character : content, connected, fulfilled, satisfied</p> <p> Energy/setting : water </p> " },
-  {index:15, title: "Page/Student of Cups", src: "assets/img/Bembo-Visconti-KnaveOfCups.jpg", alt: "Page of Cups from the 15th century Bembo-Visconti tarot deck, with a figure of a young person in regal dress standing and holding a cup with arm outstretched", modalId:"PageCupsBV", modalContent:"Suit : Cups </p> <p> Value  : Face|Page </p> <p> Plot : meditation activities, therapy, self-exploration</p> <p> Character : empathetic, emotion-driven, sweet, sensitive, </p> <p> Energy/setting : water</p> "}, 
-  {index:16, title: "King/Steward of Cups", src: "assets/img/KingCupsPiedmontese.jpg", alt: "King of Cups from the Piedmontese tarot deck", modalId: "KingCupsP", modalContent: "<p>Suit  : Cups </p> <p> Value  : Face: King|Steward </p> <p> Plot : teaching maturity, running to support, labor leadership, care work, help in an emergency</p> <p> Character : reliable, resourceful, underrated hero, lionhearted, leader from the curtains </p> <p> Energy/setting : water </p> "}, 
+  {index:15, title: "Page/Student of Cups", src: "assets/img/Bembo-Visconti-KnaveOfCups.jpg", alt: "Page of Cups from the 15th century Bembo-Visconti tarot deck, with a figure of a young person in regal dress standing and holding a cup with arm outstretched", modalId:"PageCupsBV", modalContent:"Suit : Cups </p> <p> Value  :  Face: Page | Student </p> <p> Plot : meditation activities, therapy, self-exploration</p> <p> Character : empathetic, emotion-driven, sweet, sensitive, </p> <p> Energy/setting : water</p> "}, 
+  {index:16, title: "King/Steward of Cups", src: "assets/img/KingCupsPiedmontese.jpg", alt: "King of Cups from the Piedmontese tarot deck", modalId: "KingCupsP", modalContent: "<p>Suit  : Cups </p> <p> Value  : Face: King | Steward </p> <p> Plot : teaching maturity, running to support, labor leadership, care work, help in an emergency</p> <p> Character : reliable, resourceful, underrated hero, lionhearted, leader from the curtains </p> <p> Energy/setting : water </p> "}, 
   {index:17, title: "Chaos", src: "assets/img/ChaosOracleDuDames.jpg", alt: "Chaos Major Arcana card from the Oracle Du Dames tarot deck, with abstract circles in red, blue, green, and yellow", modalId:"ChaosEtt", modalContent: "<p>Suit  : Major Arcana </p> <p> Value  : CHAOS </p> <p> Plot : randomness, chaos, deconstruction, unexpected news</p> <p> Character : frenemy, foil, romantic rival, unmanageable leader</p> <p> Energy/setting : fire</p> "}, 
-  {index:18, title: "Queen/Sage of Cups", src: "assets/img/Etteilla-QueenCups.jpeg", alt: "Queen of Cups from Eitteilla's Tarot du Thot (Thoth)", modalId:"QueenCupsEtt", modalContent: "<p>Suit  : Cups </p> <p> Value  : Face: Queen|Sage</p> <p> Plot : bearing witness, consultation, instinctive messages, relationship triage</p> <p> Character : empathy, understanding, compassion, listening</p> <p> Energy/setting : water</p> ",}, 
-  {index:19, title: "Page/Student of Cups", src: "assets/img/FrenchTarotWedding.jpeg", alt: "Page of Cups from the French Wedding tarot deck", modalId:"PageCupsWedd", modalContent:"<p> Suit : Cups </p> <p> Value  : Face: Page|Student </p> <p> Plot : meditation activities, therapy, self-exploration</p> <p> Character : empathetic, emotion-driven, sweet, sensitive, </p> <p> Energy/setting : water</p> "}, 
+  {index:18, title: "Queen/Sage of Cups", src: "assets/img/Etteilla-QueenCups.jpeg", alt: "Queen of Cups from Eitteilla's Tarot du Thot (Thoth)", modalId:"QueenCupsEtt", modalContent: "<p>Suit  : Cups </p> <p> Value  : Face: Queen | Sage</p> <p> Plot : bearing witness, consultation, instinctive messages, relationship triage</p> <p> Character : empathy, understanding, compassion, listening</p> <p> Energy/setting : water</p> ",}, 
+  {index:19, title: "Page/Student of Cups", src: "assets/img/FrenchTarotWedding.jpeg", alt: "Page of Cups from the French Wedding tarot deck", modalId:"PageCupsWedd", modalContent:"<p> Suit : Cups </p> <p> Value  : Face: Page | Student </p> <p> Plot : meditation activities, therapy, self-exploration</p> <p> Character : empathetic, emotion-driven, sweet, sensitive, </p> <p> Energy/setting : water</p> "}, 
   
 ];
 
@@ -47,76 +47,74 @@ window.onload = function(){
   // select shuffle action button
   let shuffleButton = document.querySelector('.shuffle-button');
   // add event listener to shuffle button
-    shuffleButton.addEventListener('click', function shuffleImagesAndContent() {
-      // create copy of tarot images array here instead
-      let tarotImagesCopy = [...tarotImages];
-    // select all card containers
-      let cardContainers = document.querySelectorAll('.card');
-      
-    // loop through card containers
-      cardContainers.forEach(function(card, index){
-         // If tarotImagesCopy is exhausted, refill it
-      if (tarotImagesCopy.length <= 4) {
-        tarotImagesCopy = [...tarotImages];
-      }
-      // Inside the loop, generate a random index based on the length of the image array.
-      const randomIndex = Math.floor(Math.random() * tarotImagesCopy.length);
-      const randomImage = tarotImagesCopy[randomIndex];
-      // remove the image from the array
-      tarotImagesCopy.splice(randomIndex, 1);
-      // Inside the loop, create an image element
-      let cardImages = card.querySelector('.card_img');
-      // set the src attribute & alt of image to random image
-      cardImages.src= randomImage.src;
-      cardImages.alt= randomImage.alt;
-
-      // re-initialize Micromodal 
+  //CARDS
+  shuffleButton.addEventListener('click', function shuffleImagesAndContent() {
+    // create copy of tarot images array here instead
+    let tarotImagesCopy = [...tarotImages];
+  // select all card containers
+    let cardContainers = document.querySelectorAll('.card');
+    
+  // loop through card containers
+    cardContainers.forEach(function(card, index){
+        // If tarotImagesCopy is exhausted, refill it
+    if (tarotImagesCopy.length <= 4) {
+      tarotImagesCopy = [...tarotImages];
+    }
+    // Inside the loop, generate a random index based on the length of the image array.
+    const randomIndex = Math.floor(Math.random() * tarotImagesCopy.length);
+    const randomImage = tarotImagesCopy[randomIndex];
+    // remove the image from the array
+    tarotImagesCopy.splice(randomIndex, 1);
+    // Inside the loop, create an image element
+    let cardImages = card.querySelector('.card_img');
+    // set the src attribute & alt of image to random image
+    cardImages.src= randomImage.src;
+    cardImages.alt= randomImage.alt;
+    // re-initialize Micromodal 
+    MicroModal.init({
+      disableScroll: true,
+    });
+    // MODALS
+// set modal id to default relative card image
+    let buttonTrigger = card.querySelectorAll('.open');
+    if (buttonTrigger) {
+      buttonTrigger.forEach((button) => {
+      button.addEventListener('click', function() {
+          // set modal id in DOM data to relative card image
+    let modals = document.querySelectorAll('.micromodal');
+    if (modals) {
+      modals.forEach((modal) => {
+        modal.setAttribute('id', randomImage.modalId);
+        // update modal content
+        let uniqueModalContent = randomImage.modalContent;
+        let contentElement = modal.querySelector('.modal-content');
+        if (contentElement) {
+            contentElement.innerHTML = uniqueModalContent;
+          }
+      });
+    }
+    //  Check if a modal is open by checking if the body has the class 'is-open' and if so set aria-hidden to false
+        let body = document.querySelector('body');
+        if (body.classList.contains('is-open')) {
+          body.setAttribute('aria-hidden', "false");
+        } else {
+          console.log("class list does not contain is-open");
+        }
+        if (MicroModal.activeModal) {
+        // Close any open modals
+          MicroModal.close();
+        }
+      });
+    });
+    }
+      // re-initialize Micromodal
       MicroModal.init({
+        onShow: modal => console.info(`${modal.id} is shown`),
         disableScroll: true,
       });
-  // set modal id to default relative card image
-      let buttonTrigger = card.querySelectorAll('.open');
-      if (buttonTrigger) {
-        buttonTrigger.forEach((button) => {
-        button.addEventListener('click', function() {
-           // set modal id in DOM data to relative card image
-      let modals = document.querySelectorAll('.micromodal');
-      if (modals) {
-        modals.forEach((modal) => {
-          modal.setAttribute('id', randomImage.modalId);
-          // update modal content
-          let uniqueModalContent = randomImage.modalContent;
-          let contentElement = modal.querySelector('.modal-content');
-          if (contentElement) {
-              contentElement.innerHTML = uniqueModalContent;
-            }
-        });
-      }
-      //  Check if a modal is open by checking if the body has the class 'is-open' and if so set aria-hidden to false
-          let body = document.querySelector('body');
-          if (body.classList.contains('is-open')) {
-            body.setAttribute('aria-hidden', "false");
-          } else {
-            console.log("class list does not contain is-open");
-          }
-          if (MicroModal.activeModal) {
-          // Close any open modals
-            MicroModal.close();
-          }
-          // Open modal
-          // MicroModal.show(randomImage.modalId);
-        });
-      });
-      }
-        // re-initialize Micromodal
-        MicroModal.init({
-          onShow: modal => console.info(`${modal.id} is shown`),
-          disableScroll: true,
-        });
-        
-      });
-    // }) // Remove this line
-  });
+      
+    });
+});
 
   console.log("shuffle button");
   }
