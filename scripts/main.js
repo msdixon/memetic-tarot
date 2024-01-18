@@ -9,13 +9,9 @@ MicroModal.init({
   });
 
 console.log("modalsLoaded");
-// declare modal variables
-// let tarotImageModal = document.querySelectorAll(".micromodal.id");
 
 // declare card containers and card image variables 
 let cardImages = document.querySelectorAll(".card_img");
-
-
 
 // create array of tarot images for the cards to shuffle through
 let tarotImages = [

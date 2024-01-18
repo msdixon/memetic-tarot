@@ -13,6 +13,7 @@ body {
   line-height: 1.75;
   color: black;
   display: block;
+  margin: 10px;
 }
 
 
@@ -31,9 +32,10 @@ h1 {
 }
 
 h2 {font-size: 2.441rem;
-  color: rgb(2, 93, 103)}
+  color: rgb(2, 93, 103);
+  text-align: center;}
 
-h3 {font-size: 1.953rem; text-align: center; position: relative; color: rgb(2, 93, 103)}
+h3 {font-size: 1.953rem; text-align: center; position: relative; color: rgb(2, 93, 103);}
 
 h4 {font-size: 1.563rem; color: rgb(2, 93, 103); text-align: center; position: relative;}
 
@@ -65,15 +67,15 @@ p {
   display: flex;
   flex-flow: row wrap;
   gap: 1.3rem;
-  padding:0;
+  padding: 10px;
   top: auto;
   list-style: none;
   align-content: end;
   text-align: end;
   justify-content: end;
   width: 99%;
-  /* font-family: 'Poppins', sans-serif; */
 } 
+
 header, footer {
   text-align: center;
   color: black;
@@ -112,6 +114,21 @@ footer{
 
 .flex-grid {
   flex: 1 1 30ch;
+}
+
+/* layout for about page */
+.about-grid {
+  flex: 1 1 30ch;
+}
+
+.about-container {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  grid-auto-rows: minmax(100px, auto);
+  
+
 }
 
 /* main interaction button to initiate reshuffle action*/
@@ -159,6 +176,19 @@ footer{
   background-repeat: no-repeat;
   background-color: rgb(215, 202, 234, .5); 
  }
+
+ /* about page as cards */
+ .about-card {
+  width: minmax(100px, auto);
+  height: minmax(auto, 100px);
+  flex-wrap: wrap;
+  align-content: stretch;
+  position: static;
+  background-color: rgb(215, 202, 234, .5);
+  border: 2px dotted black;
+  /* box-sizing: content-box; */
+  padding:20px;
+}
 
 .one {
   display: block;
