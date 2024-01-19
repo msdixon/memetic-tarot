@@ -52,6 +52,17 @@ p {
   text-align:inherit;
  
 }
+/* 
+cite{
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-align: inherit;
+  letter-spacing: .05em;
+  display: flex;
+  text-wrap: wrap; 
+} */
+
 
 /* subtitle {
   align-content: end;
