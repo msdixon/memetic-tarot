@@ -16,6 +16,10 @@ body {
   margin: 10px;
 }
 
+body.references {
+  margin: 1in;
+  padding: auto;
+}
 
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
@@ -107,6 +111,30 @@ footer{
   align-content: end;
   text-align: end;
   width: 97%;
+}
+
+
+/* 
+h1.references {
+  text-align: center;
+  margin-bottom: 2em;
+} */
+
+ul.references {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul.references li {
+  margin-bottom: 1em;
+  text-indent: -0.5in;
+  padding-left: 0.5in;
+}
+
+ul.references li::after {
+  content: ".";
+  display: inline-block;
+  width: 0.5in;
 }
 /* 
 .nav-item {
