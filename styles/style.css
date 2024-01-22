@@ -17,8 +17,7 @@ body {
 }
 
 body.references {
-  margin: 1in;
-  padding: auto;
+  margin: 10px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -45,7 +44,7 @@ h4 {font-size: 1.563rem; color: rgb(2, 93, 103); text-align: center; position: r
 
 h5 {font-size: 1.rem; color:  rgb(2, 93, 103); text-align: center; position: relative;}
 
-h6 {font-size: 0.8rem; line-height:1rem; black ; text-align: center; position: relative;}
+h6 {font-size: 0.8rem; line-height:1rem; color:black ; text-align: center; position: relative;}
 
 p {
   /* margin: 0 0 1.38rem; */
@@ -100,9 +99,11 @@ header, footer {
   position: absolute;
 }
 
-header {
-  border-style: (none, none, dashed, none);
-  border-radius: 1em;
+.header {
+  border-style: none none dashed none;
+  margin-bottom: .88em;
+  margin-left: .88em;
+  margin-right: .88em;
 }
 
 footer{
@@ -121,6 +122,7 @@ h1.references {
 } */
 
 ul.references {
+  /* display:grid; */
   list-style-type: none;
   padding-left: 0;
 }
@@ -131,11 +133,11 @@ ul.references li {
   padding-left: 0.5in;
 }
 
-ul.references li::after {
+/* ul.references li::after {
   content: ".";
   display: inline-block;
-  width: 0.5in;
-}
+  width: 0.5in; 
+}*/
 /* 
 .nav-item {
 } 
@@ -159,14 +161,26 @@ ul.references li::after {
   flex: 1 1 30ch;
 }
 
+.references-grid {
+  flex: 1 1 30ch;
+}
+
 .about-container {
   text-align: left;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
   grid-auto-rows: minmax(100px, auto);
-  
+}
 
+.references-container {
+  display: grid;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  /* grid-template-columns: repeat(6, 1fr);
+  grid-column-start: 2;
+  grid-column-end: 5;
+  gap: 2em; */
 }
 
 /* main interaction button to initiate reshuffle action*/
