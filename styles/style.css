@@ -253,7 +253,7 @@ ul.references li {
   display: flex;
   padding: 1px;
   font-size: small;
-  text-align:end;
+  text-align: end;
   font-kerning: auto;
   border: 1px gray;
 }
