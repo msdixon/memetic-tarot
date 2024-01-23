@@ -240,6 +240,8 @@ ul.references li {
   border: 2px dotted black;
   /* box-sizing: content-box; */
   padding:20px;
+  box-sizing: border-box;
+  border: 5px ridge black;
 }
 
 .one {
