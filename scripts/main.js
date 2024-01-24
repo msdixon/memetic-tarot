@@ -49,7 +49,6 @@ window.onload = function(){
     let tarotImagesCopy = [...tarotImages];
   // select all card containers
     let cardContainers = document.querySelectorAll('.card');
-    
   // loop through card containers
     cardContainers.forEach(function(card, index){
         // If tarotImagesCopy is exhausted, refill it
