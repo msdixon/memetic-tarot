@@ -5,7 +5,7 @@
 html {
   font-family: 'Poppins', sans-serif;
   background-color: #F4EEDC;
-} 
+}
 
 body {
   font-weight: 400;
@@ -34,46 +34,58 @@ h1 {
   text-align: center;
 }
 
-h2 {font-size: 2.441rem;
+h2 {
+  font-size: 2.441rem;
   color: rgb(2, 93, 103);
-  text-align: center;}
+  text-align: center;
+}
 
 h3 {font-size: 1.953rem; text-align: center; position: relative; color: rgb(2, 93, 103);}
 
 h4 {font-size: 1.563rem; color: rgb(2, 93, 103); text-align: center; position: relative;}
 
-h5 {font-size: 1.rem; color:  rgb(2, 93, 103); text-align: center; position: relative;}
+h5 {font-size: 1rem; color: rgb(2, 93, 103); text-align: center; position: relative;}
 
-h6 {font-size: 0.8rem; line-height:1rem; color:black ; text-align: center; position: relative;}
+h6 {font-size: 0.8rem; line-height: 1rem; color: black; text-align: center; position: relative;}
 
 p {
-  /* margin: 0 0 1.38rem; */
   font-size: .889rem;
   line-height: 1.3;
   color: black;
   display: flex;
-  text-align:inherit;
- 
-}
-/* 
-cite{
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
   text-align: inherit;
-  letter-spacing: .05em;
-  display: flex;
-  text-wrap: wrap; 
-} */
+}
 
-/* subtitle {
-  align-content: end;
-  justify-content: end;
+.subtitle {
+  font-size: 1rem;
+  color: rgb(2, 93, 103);
   text-align: center;
-  container-type: flex;
-} */
+  line-height: 1.6;
+}
 
 .small, .text_small {font-size: 0.8rem;}
+
+/* skip to main content link — hidden until focused */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: rgb(121, 3, 3);
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* keyboard focus indicator — WCAG 2.1 AA 2.4.7 */
+:focus-visible {
+  outline: 3px solid rgb(121, 3, 3);
+  outline-offset: 3px;
+}
 
 /* navigation bar */
 .nav-list {
@@ -87,16 +99,14 @@ cite{
   text-align: end;
   justify-content: end;
   width: 99%;
-} 
+}
 
 header, footer {
   text-align: center;
   color: black;
   display: flex;
-  /* margin: auto; */
   padding: 0;
   font-size: .9rem;
-  position: absolute;
 }
 
 .header {
@@ -106,23 +116,15 @@ header, footer {
   margin-right: .88em;
 }
 
-footer{
-  display:flex;
+footer {
+  display: flex;
   justify-content: flex-end;
   align-content: end;
   text-align: end;
   width: 97%;
 }
 
-
-/* 
-h1.references {
-  text-align: center;
-  margin-bottom: 2em;
-} */
-
 ul.references {
-  /* display:grid; */
   list-style-type: none;
   padding-left: 0;
 }
@@ -132,19 +134,6 @@ ul.references li {
   text-indent: -0.5in;
   padding-left: 0.5in;
 }
-
-/* ul.references li::after {
-  content: ".";
-  display: inline-block;
-  width: 0.5in; 
-}*/
-/* 
-.nav-item {
-} 
-
-.nav-link {
-
-} */
 
 /* everylayout card & grid  */
 .flex-card {
@@ -168,7 +157,7 @@ ul.references li {
 .about-container {
   text-align: left;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 15px;
   grid-auto-rows: minmax(100px, auto);
 }
@@ -177,16 +166,13 @@ ul.references li {
   display: grid;
   margin-left: 3rem;
   margin-right: 3rem;
-  /* grid-template-columns: repeat(6, 1fr);
-  grid-column-start: 2;
-  grid-column-end: 5;
-  gap: 2em; */
 }
 
-/* main interaction button to initiate reshuffle action*/
+/* main interaction button to initiate reshuffle action */
 .shuffle-button {
   display: inline-block;
-  font-size: 1.953rem; position: relative;
+  font-size: 1.953rem;
+  position: relative;
   text-align: center;
   border: 3px solid black;
   background-color: rgb(121, 3, 3);
@@ -195,16 +181,17 @@ ul.references li {
   padding-block: 1rem 1.5rem;
   margin-inline: 50%;
   transition-duration: .4s;
-  }
-  .shuffle-button:hover{
-    background-color: rgba(50, 30, 37, 0.8);
-    border-radius: 2px;
-    cursor: auto;
-    border: 5px ridge black;
-  }
+}
 
- /* || original card grid */
- .cards {
+.shuffle-button:hover {
+  background-color: rgba(50, 30, 37, 0.8);
+  border-radius: 2px;
+  cursor: pointer;
+  border: 5px ridge black;
+}
+
+/* || original card grid */
+.cards {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -212,134 +199,79 @@ ul.references li {
   position: static;
 }
 
-/* ||card container styling */
- .card {
-  width: 230px;
-  height: 400px;
+/* || card container styling */
+.card {
+  width: clamp(120px, 22vw, 230px);
+  height: clamp(200px, 38vw, 400px);
   display: flex;
-  /* border: 5px ridge black; */
   box-sizing: content-box;
-  /* background: linear-gradient(to right, rgba(107, 162, 217, 0), rgb(255, 0, 212)); */
   margin: 2ch;
   padding: 1px;
   cursor: auto;
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
-  background-color: rgb(215, 202, 234, .5); 
- }
+  background-color: rgb(215, 202, 234, .5);
+}
 
- /* about page as cards */
- .about-card {
-  width: minmax(100px, auto);
-  height: minmax(auto, 100px);
+/* about page as cards */
+.about-card {
   flex-wrap: wrap;
   align-content: stretch;
   position: static;
   background-color: rgb(215, 202, 234, .5);
-  border: 2px dotted black;
-  /* box-sizing: content-box; */
-  padding:20px;
+  padding: 20px;
   box-sizing: border-box;
   border: 5px ridge black;
 }
 
 .one {
   display: block;
-  /* flex-wrap: wrap; */
   justify-content: center;
-}
-
-.two {
-  height: 85%;
-  display: flex;
-  padding: 1px;
-  font-size: small;
-  text-align: end;
-  font-kerning: auto;
-  border: 1px gray;
-}
-
-.three {
-  display: flex;
-  height: 15%;
-  justify-content: center;
-}
-
-.four {
-  position:absolute;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  margin: 10px;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-}
-
-.six {
-  border: 1px gray;
-  height: 20%;
-  max-width: 800ch;
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
 
 .card_img {
-  height: 400px;
-  width: 230px;
+  width: clamp(120px, 22vw, 230px);
+  height: clamp(200px, 38vw, 400px);
   object-fit: cover;
   background-size: cover;
   padding: 1px;
   box-sizing: border-box;
   border: 5px ridge black;
+}
+
+.cupstwo-sw    { background-size: cover; }
+.cupsqueen-et  { background-size: cover; }
+.cupsfour-minch{ background-size: cover; }
+.cupstwo-sbus  { background-size: cover; }
+.cupsknave-bv  { background-size: cover; }
+.chaos-ddames  { background-size: cover; }
+.cupsthree-sw  { background-size: cover; }
+.cupsnine-tarok{ background-size: cover; }
+.cupsace-sw    { background-size: cover; }
+
+/* ── Responsive breakpoints ── */
+
+@media (max-width: 768px) {
+  .shuffle-button {
+    margin-inline: auto;
+    display: block;
+    font-size: 1.25rem;
   }
 
-.cupstwo-sw {
-  /* background-image: url('../assets/img/Cups02.jpg'); */
-  background-size: cover;
+  .references-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
-.cupsqueen-et {
-  /* background-image: url('../assets/img/Etteilla-QueenCups.jpeg');  */
-  background-size: cover;
+  h1 { font-size: 2.2rem; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.75rem; }
+
+  .references-container {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
-
-.cupsfour-minch {
-  /* background-image: url('../assets/img/MinchiateCups04.jpg');  */
-  background-size: cover;
-  }
-
-.cupstwo-sbus {
-  /* background-image: url('../assets/img/Sola_Busca_Cups02.jpg');  */
-  background-size: cover;
-  }
-
-.cupsknave-bv {
-  /* background-image: url('../assets/img/Bembo-Visconti-KnaveOfCups.jpg');  */
-  background-size: cover;
-  }
-
-.chaos-ddames {
-  /* background-image: url('../assets/img/ChaosOracleDuDames.jpg');  */
-  alt: "Chaos Oracle Du Dames";
-  background-size: cover;
-  }
-
-.cupsthree-sw {
-  /* background-image: url('../assets/img/Three_of_Cups\,_Waite-Smith_Tarot_Deck\,_Yale_University.jpg');  */
-  background-size: cover;
-  }
-
-.cupsnine-tarok {
-  /* background-image: url('../assets/img/TarokkKartya_Barely_09Cup.jpg'); */
-  background-size: cover;
-  } 
-
- .cupsace-sw {
-  /* background-image: url('../assets/img/assets/img/AceOfCupsFlickr.jpg');  */
-  background-size: cover;
-  } 
+}
