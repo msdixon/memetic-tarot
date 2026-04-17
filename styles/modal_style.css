@@ -1,71 +1,68 @@
 /* micromodal css for modal animation */
 
-/* original micromodal open modal styling */
-
 .open {
-    position: absolute;
-    background-color: rgb(182, 120, 240);
-    color: black;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    border: 1px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center; 
-    padding: 10px;
-    margin: 10px;
-    width: 100px;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    /* z-index: 3; */
-  }
-  
-  .micromodal {
-    display: none;
-  }
-  
-  .micromodal.is-open {
-    display: block;
-  }
-  
-  .micromodal__overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0,0,0,0.65);
-  }
-  
-  .micromodal__container {
-    box-sizing: border-box;
-    overflow-y: scroll;
-    max-width: 500px;
-    max-height: 100vh;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 4px;
-    z-index: 4;
-  }
-  
-  .micromodal[aria-hidden="false"] .micromodal__overlay {
-    animation: microModalFadeIn .2s cubic-bezier(0.0, 0.0, 0.2, 1);
-  }
-  
-  .micromodal[aria-hidden="false"] .micromodal__container {
-    animation: microModalSlideIn .2s cubic-bezier(0, 0, .2, 1);
-  }
-  
-  .micromodal .micromodal__container,
-  .micromodal .micromodal__overlay {
-    will-change: transform;
-  }
+  position: absolute;
+  background-color: rgb(182, 120, 240);
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.micromodal {
+  display: none;
+}
+
+.micromodal.is-open {
+  display: block;
+}
+
+.micromodal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.65);
+}
+
+.micromodal__container {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  max-width: 500px;
+  max-height: 100vh;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  z-index: 4;
+}
+
+.micromodal[aria-hidden="false"] .micromodal__overlay {
+  animation: microModalFadeIn .2s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal[aria-hidden="false"] .micromodal__container {
+  animation: microModalSlideIn .2s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal .micromodal__container,
+.micromodal .micromodal__overlay {
+  will-change: transform;
+}
 
 @keyframes microModalFadeIn {
   from { opacity: 0; }
@@ -77,95 +74,20 @@
   to { transform: translateY(0); }
 }
 
-.card:hover {
-  background: blue;
-  opacity: .2;
+/* close button minimum tap target */
+button[data-micromodal-close] {
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
 }
 
 .modal-content {
-  cursor: pointer;
-}
-.aceCupsRWS{
-  text-align: match-parent;
+  cursor: default;
 }
 
-.aceCupsVSf{
-  text-align: match-parent;
+@media (max-width: 480px) {
+  .micromodal__container {
+    max-width: 95vw;
+    padding: 16px;
+  }
 }
-
-.aceCupsConver{
-  text-align: match-parent;
-}
-
-.Cups02RWS{
-  text-align: match-parent;
-}
-
-.Cups02SB{
-  text-align: match-parent;;
-}
-
-.Cups03Min{
-  text-align: match-parent;;
-}
-
-.Cups03RWS{
-  text-align: match-parent;;
-}
-
-.Cups04Min{
-  text-align: match-parent;;
-}
-
-.Cups05RWS{
-  text-align: match-parent;
-}
-
-.Cups06BaT{
-  text-align: match-parent;;
-}
-
-.Cups07SB{
-  text-align: match-parent;
-}
-
-.Cups08SB{
-  text-align: match-parent;
-}
-
-.Cups09TK{
-  text-align: match-parent;;
-}
-
-.Cups09VSf{
-  text-align: match-parent;
-}
-
-.Cups10SB{
-  text-align: match-parent;
-}
-
-.ChaosEtt{
-  text-align: match-parent;
-}
-
-.PageCupsWedd{
-  text-align: match-parent;
-}
-
-.PageCupsBV{
-  text-align: match-parent;
-}
-
-.QueenCupsEtt{
-  text-align: match-parent;
-}
-
-.KingCupsP{
-  text-align: match-parent;
-}
-
-
-
-
-

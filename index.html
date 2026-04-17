@@ -1,284 +1,412 @@
 <!DOCTYPE html>
-<html>
-    <link rel="stylesheet" type="text/css" href="./styles/style.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="./styles/modal_style.css" media="screen" />
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tarot Fabula: a shuffled exploration of tarot card symbolism, story serendipity, and playful potentiality. Remix archival tarot cards to co-create your own narrative." />
+  <meta property="og:title" content="Tarot Fabula" />
+  <meta property="og:description" content="A shuffled exploration of tarot card symbolism, story serendipity, and playful potentiality." />
+  <meta property="og:image" content="./assets/img/ThreeCupsRWS.jpg" />
   <title>Tarot Fabula</title>
   <link rel="icon" type="image/x-icon" href="./assets/img/TF_favicon.ico">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="./styles/modal_style.css" media="screen" />
 </head>
-  <body>
-  <div class="one flex-grid">
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="one flex-grid">
   <!-- navigation links -->
-  <nav>
+  <nav aria-label="Primary navigation">
     <ul class="nav-list">
       <li class="nav-item">
         <a class="nav-link" href="./index.html">tarot fabula</a>
       </li>
-        <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="https://tarotfabula.omeka.net/items/browse?sort_field=Dublin+Core%2CTitle">collection</a>
       </li>
-        <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="./about.html">about</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="./references.html">references</a>
-      </li> 
-      </li> 
+      </li>
     </ul>
   </nav>
 
-<!-- header content -->
-    <div class="header">
-        <h1>Tarot Fabula</h1>
-        <!-- <rule></rule> -->
-        <h5>Like many stories, the images on a tarot card can tell a unique narrative when placed in a particular pattern. <br>Make your own story with the image cues given by each or every card. <br>Re-shuffle the deck as often as you like for a new set of story elements, themes, and characters. <br>Interpret freely given the cues on the modals. <br>For more info on the origin of these cards, head to the <a href="https://tarotfabula.omeka.net/items/browse?sort_field=Dublin+Core%2CTitle"> collection</a>.</h5>
+  <!-- header content -->
+  <header class="header">
+    <h1>Tarot Fabula</h1>
+    <p class="subtitle">Like many stories, the images on a tarot card can tell a unique narrative when placed in a particular pattern. <br>Make your own story with the image cues given by each or every card. <br>Re-shuffle the deck as often as you like for a new set of story elements, themes, and characters. <br>Interpret freely given the cues on the modals. <br>For more info on the origin of these cards, head to the <a href="https://tarotfabula.omeka.net/items/browse?sort_field=Dublin+Core%2CTitle">collection</a>.</p>
+  </header>
 
+  <!-- window card grid -->
+  <main id="main-content" class="cards">
+    <button type="button" class="shuffle-button">re-shuffle</button>
+    <div class="card cupstwo-sw">
+      <img class="card_img" src="assets/img/Cups02.jpg" alt="Two of Cups from Rider-Waite-Smith tarot deck">
+      <button class="open" data-micromodal-trigger="Cups02RWS" aria-label="View details for Two of Cups (Rider-Waite-Smith)">open me</button>
     </div>
-    
- <!-- window card grid -->
-<div class="cards">
-      <button type="button" class="shuffle-button">re-shuffle</button>
-    <!-- <div class="wrapper"> -->
-      <div class="card cupstwo-sw">
-        <img class="card_img" src="assets/img/Cups02.jpg" alt="Two of Cups from Rider-White-Smith">
-          <button class="open" data-micromodal-trigger="Cups02RWS" href='javascript:void(0);'>open me</button>
-      </div>
-      <div class="card cupsqueen-et">
-        <img class="card_img" src="assets/img/Etteilla-QueenCups.jpeg" alt="Queen of Cups from Etteilla">
-          <button class="open" data-micromodal-trigger="QueenCupsEtt" href='javascript:void(0);'>open me</button>
-      </div>
-      <div class="card cupsfour-minch">
-        <img class="card_img" src="assets/img/MinchiateCups04.jpg" alt="Four of Cups from Minchiate">
-          <button class="open" data-micromodal-trigger="Cups04Min" href='javascript:void(0);'>open me</button>
-      </div>
-      <div class="card cupstwo-sbus">
-        <img class="card_img"src="assets/img/Sola_Busca_Cups02.jpg" alt="Two of Cups from Sola Busca">
-          <button class="open" data-micromodal-trigger="Cups02SB" href='javascript:void(0);'>open me</button>
-      </div>
-      
-  </div>
-  </div> 
-  <!-- <h6>(example tk)</h6> -->
+    <div class="card cupsqueen-et">
+      <img class="card_img" src="assets/img/Etteilla-QueenCups.jpeg" alt="Queen of Cups from Etteilla's Tarot du Thot">
+      <button class="open" data-micromodal-trigger="QueenCupsEtt" aria-label="View details for Queen of Cups (Etteilla)">open me</button>
+    </div>
+    <div class="card cupsfour-minch">
+      <img class="card_img" src="assets/img/MinchiateCups04.jpg" alt="Four of Cups from Minchiate tarot deck">
+      <button class="open" data-micromodal-trigger="Cups04Min" aria-label="View details for Four of Cups (Minchiate)">open me</button>
+    </div>
+    <div class="card cupstwo-sbus">
+      <img class="card_img" src="assets/img/Sola_Busca_Cups02.jpg" alt="Two of Cups from Sola Busca tarot deck">
+      <button class="open" data-micromodal-trigger="Cups02SB" aria-label="View details for Two of Cups (Sola Busca)">open me</button>
+    </div>
+  </main>
+</div>
 
-  <footer><ul class="nav-list">
-    <li class="nav-item"> Tarot Fabula &#169; 2024 
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="mailto:info@tarotfab.com">contact</a> 
-    </li> 
-    <li class="nav-item">
-      <a class=nav-link href="https://racheldixon.com">about rachel</a>
-    </li>
-    <li class="nav item">
-      <a class="nav-item" href="https://bsky.app/profile/msdixon.bsky.social">bluesky</a>
-    </li>
-      <a class="nav-item" href="https://zirk.us/@msdixon">mastodon</a></li>
+<footer>
+  <nav aria-label="Footer navigation">
+    <ul class="nav-list">
+      <li class="nav-item">Tarot Fabula &#169; 2024</li>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:info@tarotfab.com">contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://racheldixon.com">about rachel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://bsky.app/profile/msdixon.bsky.social">bluesky</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://zirk.us/@msdixon">mastodon</a>
+      </li>
     </ul>
-  </footer>
- 
-</body>
+  </nav>
+</footer>
 
- <!-- <div class="micromodal" id="modal-1" aria-hidden="true"> !-->
-   <!-- Queen of Cups Ettiela -->
-  <div class="micromodal" id="QueenCupsEtt" aria-hidden="true">
-    <div class="micromodal__overlay" tabindex="-2" data-micromodal-close>
-      <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="etteilla-queen-cups">
-        <button aria-label="Close modal" data-micromodal-close>X</button>
-          <main class="modal-content"> Suit  : Cups </p> <p> Value  : Face: Queen | Sage</p> <p> Plot : bearing witness, consultation, instinctive messages, relationship triage</p> <p> Character : empathy, understanding, compassion, listening</p> <p> Energy/setting : water</p>
-            </main>
-        </div>
-      </div>
-    </div>
-  <!-- Page Cups, Bembo Visconti div -->
-  <div class="micromodal" id="PageCupsBV" aria-hidden="true">
-    <div class="micromodal__overlay" tabindex="-5" data-micromodal-close>
-      <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="visconti-sforza-page-cups">
+<!-- modals — inside body -->
+
+<!-- Queen of Cups Etteilla -->
+<div class="micromodal" id="QueenCupsEtt" aria-hidden="true">
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Queen of Cups — Etteilla">
       <button aria-label="Close modal" data-micromodal-close>X</button>
-      <main class="modal-content"> <p>Suit  : Cups </p> <p> Value  : Face: Page | Student</p> <p> Plot : watery emotions, crushes, new connections, moving somewhere new</p> <p> Character : curiosity, plumbing the depths, all-the-feels </p> <p> Energy/setting : water</p>
-      </main>
-    </div>
-    </div>
-  </div>
-<!-- Chaos card div -->
-  <div class="micromodal" id="ChaosEtt" aria-hidden="true">
-    <div class="micromodal__overlay" tabindex="-6" data-micromodal-close>
-      <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="etteilla-chaos">
-      <button aria-label="Close modal" data-micromodal-close>X</button>
-      <main class="modal-content"> <p>Suit  : Major Arcana </p> <p> Value  : CHAOS </p> <p> Plot : randomness, chaos, deconstruction, unexpected news</p> <p> Character : frenemy, foil, romantic rival, unmanageable leader</p> <p> Energy/setting : water</p>
-      </main>
-    </div>
-    </div>
-  </div>
-<!-- Wedding Tarot Page div -->
-  <div class="micromodal" id="PageCupsWedd" aria-hidden="true">
-    <div class="micromodal__overlay" tabindex="-8" data-micromodal-close>
-      <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="wedding-page-cups">
-      <button aria-label="Close modal" data-micromodal-close>X</button>
-      <main class="modal-content"> <p>Suit  : Cups </p> <p> Value  : Face: Page | Student</p> <p> Plot : watery emotions, crushes, new connections, moving somewhere new</p> <p> Character : curiosity, plumbing the depths, all-the-feels </p> <p> Energy/setting : water</p>
-      </main>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Face: Queen | Sage</p>
+        <p>Plot : bearing witness, consultation, instinctive messages, relationship triage</p>
+        <p>Character : empathy, understanding, compassion, listening</p>
+        <p>Energy/setting : water</p>
       </div>
     </div>
   </div>
-<!-- Ace, Rider-White-Smith div -->
+</div>
+
+<!-- Page of Cups, Bembo Visconti -->
+<div class="micromodal" id="PageCupsBV" aria-hidden="true">
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Page of Cups — Bembo Visconti">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Face: Page | Student</p>
+        <p>Plot : watery emotions, crushes, new connections, moving somewhere new</p>
+        <p>Character : curiosity, plumbing the depths, all-the-feels</p>
+        <p>Energy/setting : water</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Chaos card -->
+<div class="micromodal" id="ChaosEtt" aria-hidden="true">
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Chaos — Major Arcana">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Major Arcana</p>
+        <p>Value : CHAOS</p>
+        <p>Plot : randomness, chaos, deconstruction, unexpected news</p>
+        <p>Character : frenemy, foil, romantic rival, unmanageable leader</p>
+        <p>Energy/setting : fire</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Page of Cups, Wedding Tarot -->
+<div class="micromodal" id="PageCupsWedd" aria-hidden="true">
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Page of Cups — French Wedding Tarot">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Face: Page | Student</p>
+        <p>Plot : watery emotions, crushes, new connections, moving somewhere new</p>
+        <p>Character : curiosity, plumbing the depths, all-the-feels</p>
+        <p>Energy/setting : water</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ace of Cups, Rider-Waite-Smith -->
 <div class="micromodal" id="aceCupsRWS" aria-hidden="true">
-<div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-  <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="ace-cups-rider">
-    <button aria-label="Close modal" data-micromodal-close>X</button>
-    <main class="modal-content" > <p>Suit  : Cups </p> <p> Value  : Ace (1)</p> <p> Plot : blessings, abundance, grit, auspices, small miracles</p> <p> Character : artistic, creative, dynamic leader</p> <p> Energy/setting : water</p>
-      </main>
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Ace of Cups — Rider-Waite-Smith">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Ace (1)</p>
+        <p>Plot : blessings, abundance, grit, auspices, small miracles</p>
+        <p>Character : artistic, creative, dynamic leader</p>
+        <p>Energy/setting : water</p>
+      </div>
     </div>
+  </div>
 </div>
-</div>
-<!-- Ace, Cups Conver Deck div -->
+
+<!-- Ace of Cups, Conver Deck -->
 <div class="micromodal" id="aceCupsConver" aria-hidden="true">
-<div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-  <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="Ace-Cups-Conver">
-    <button aria-label="Close modal" data-micromodal-close>X</button>
-    <main class="modal-content" > <p>Suit  : Cups </p> <p> Value  : Ace (1)</p> <p> Plot : blessings, abundance, grit, auspices, small miracles</p> <p> Character : artistic, creative, dynamic leader</p> <p> Energy/setting : water</p>
-      </main>
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Ace of Cups — Conver Deck">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Ace (1)</p>
+        <p>Plot : blessings, abundance, grit, auspices, small miracles</p>
+        <p>Character : artistic, creative, dynamic leader</p>
+        <p>Energy/setting : water</p>
+      </div>
     </div>
+  </div>
 </div>
-</div>
-<!-- Ace cups Vincenzi-Sforza -->
+
+<!-- Ace of Cups, Visconti-Sforza -->
 <div class="micromodal" id="aceCupsVSf" aria-hidden="true">
-<div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-  <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="ace-cups-visconti-sforza">
-    <button aria-label="Close modal" data-micromodal-close>X</button>
-    <main class="modal-content" > <p>Suit  : Cups </p> <p> Value  : Ace (1)</p> <p> Plot : blessings, abundance, grit, auspices, small miracles</p> <p> Character : artistic, creative, dynamic leader</p> <p> Energy/setting : water</p>
-      </main>
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Ace of Cups — Visconti-Sforza">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Ace (1)</p>
+        <p>Plot : blessings, abundance, grit, auspices, small miracles</p>
+        <p>Character : artistic, creative, dynamic leader</p>
+        <p>Energy/setting : water</p>
+      </div>
     </div>
+  </div>
 </div>
-</div>
-<!-- 02 of Cups, RWS -->
+
+<!-- Two of Cups, Rider-Waite-Smith -->
 <div class="micromodal" id="Cups02RWS" aria-hidden="true">
-<div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-  <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="two-cups-rider">
-    <button aria-label="Close modal" data-micromodal-close>X</button>
-    <main class="modal-content" > <p>Suit  : Cups </p> <p> Value  : Two (2) </p> <p> Plot : imagination, satisfaction, intuition, relationships</p> <p> Character : friendliness, calm waters, love-struck, focused on balance, caring</p> <p> Energy/setting : water</p>
-      </main>
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Two of Cups — Rider-Waite-Smith">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Two (2)</p>
+        <p>Plot : imagination, satisfaction, intuition, relationships</p>
+        <p>Character : friendliness, calm waters, love-struck, focused on balance, caring</p>
+        <p>Energy/setting : water</p>
+      </div>
     </div>
+  </div>
 </div>
-</div>
-<!-- 2 of Cups Sola Busca -->
+
+<!-- Two of Cups, Sola Busca -->
 <div class="micromodal" id="Cups02SB" aria-hidden="true">
-<div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-  <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="two-cups-sola-busca">
-    <button aria-label="Close modal" data-micromodal-close>X</button>
-    <main class="modal-content"> <p>Suit  : Cups </p> <p> Value  : Two (2) </p> <p> Plot : imagination, satisfaction, intuition, relationships</p> <p> Character : friendliness, calm waters, love-struck, focused on balance, caring</p> <p> Energy/setting : water</p>
-      </main>
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Two of Cups — Sola Busca">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Two (2)</p>
+        <p>Plot : imagination, satisfaction, intuition, relationships</p>
+        <p>Character : friendliness, calm waters, love-struck, focused on balance, caring</p>
+        <p>Energy/setting : water</p>
+      </div>
     </div>
+  </div>
 </div>
-</div>
-<!-- Three Cups, Minchiate -->
+
+<!-- Three of Cups, Minchiate -->
 <div class="micromodal" id="Cups03Min" aria-hidden="true">
-<div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-  <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="three-cups-minchiate">
-    <button aria-label="Close modal" data-micromodal-close>X</button>
-    <main class="modal-content" > <p>Suit  : Cups </p> <p> Value  : Three (3)</p> <p> Plot :offerings, rewards, fruiting plants, gifts, sharing</p> <p> Character : gardener, community leader, one tender-of-spirit</p> <p> Energy/setting : water</p>
-      </main>
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Three of Cups — Minchiate">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Three (3)</p>
+        <p>Plot : offerings, rewards, fruiting plants, gifts, sharing</p>
+        <p>Character : gardener, community leader, one tender-of-spirit</p>
+        <p>Energy/setting : water</p>
+      </div>
     </div>
+  </div>
 </div>
-</div>
-<!-- Three Cups RWS micromodal div -->
+
+<!-- Three of Cups, Rider-Waite-Smith -->
 <div class="micromodal" id="Cups03RWS" aria-hidden="true">
-<div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-  <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="three-cups-rider">
-    <button aria-label="Close modal" data-micromodal-close>X</button>
-    <main class="modal-content" > <p>Suit  : Cups </p> <p> Value  : Three (3)</p> <p> Plot :offerings, rewards, fruiting plants, gifts, sharing</p> <p> Character : gardener, community leader, one tender-of-spirit</p> <p> Energy/setting : water</p>
-      </main>
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Three of Cups — Rider-Waite-Smith">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Three (3)</p>
+        <p>Plot : offerings, rewards, fruiting plants, gifts, sharing</p>
+        <p>Character : gardener, community leader, one tender-of-spirit</p>
+        <p>Energy/setting : water</p>
+      </div>
     </div>
+  </div>
 </div>
-</div>
-<!-- Four Cups Minchiate micromodal div -->
+
+<!-- Four of Cups, Minchiate -->
 <div class="micromodal" id="Cups04Min" aria-hidden="true">
-<div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-  <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="four-cups-minchiate">
-    <button aria-label="Close modal" data-micromodal-close>X</button>
-    <main class="modal-content" > <p>Suit  : Cups </p> <p> Value  : Four (4) </p> <p> Plot : imagination, satisfaction, intuition, relationships</p> <p> Character : friendliness, calm waters, love-struck, focused on balance, caring</p> <p> Energy/setting : water</p>
-      </main>
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Four of Cups — Minchiate">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Four (4)</p>
+        <p>Plot : imagination, satisfaction, intuition, relationships</p>
+        <p>Character : friendliness, calm waters, love-struck, focused on balance, caring</p>
+        <p>Energy/setting : water</p>
+      </div>
     </div>
+  </div>
 </div>
-</div>
-<!-- Five of cups, Rider-White-Smith micromodal div -->
+
+<!-- Five of Cups, Rider-Waite-Smith -->
 <div class="micromodal" id="Cups05RWS" aria-hidden="true">
-<div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-  <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="five-cups-rider">
-    <button aria-label="Close modal" data-micromodal-close>X</button>
-    <main class="modal-content" > <p>Suit  : Cups </p> <p> Value  : Five (5)</p> <p> Plot : alienation, sadness, poor harvest </p> <p> Character : misanthrope, traumatized, low self-care</p> <p> Energy/setting : water</p>
-      </main>
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Five of Cups — Rider-Waite-Smith">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Five (5)</p>
+        <p>Plot : alienation, sadness, poor harvest</p>
+        <p>Character : misanthrope, traumatized, low self-care</p>
+        <p>Energy/setting : water</p>
+      </div>
     </div>
+  </div>
 </div>
-</div>
-<!-- Six Cups Alla Torre micromodal div -->
+
+<!-- Six of Cups, Bolonais Alla Torre -->
 <div class="micromodal" id="Cups06BaT" aria-hidden="true">
-<div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-  <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="six-cups-torre">
-    <button aria-label="Close modal" data-micromodal-close>X</button>
-    <main class="modal-content" > <p>Suit  : Cups </p> <p> Value  : Six (6)</p> <p> Plot : culmination, memories, healing, enjoying pleasure after a life trial </p> <p> Character : steeped in neediness, nostalgia</p> <p> Energy/setting : water</p>
-    </main>
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Six of Cups — Bolonais Alla Torre">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Six (6)</p>
+        <p>Plot : culmination, memories, healing, enjoying pleasure after a life trial</p>
+        <p>Character : steeped in neediness, nostalgia</p>
+        <p>Energy/setting : water</p>
+      </div>
+    </div>
   </div>
 </div>
-</div>
-<!-- Seven of Cups micromodal div -->
+
+<!-- Seven of Cups, Sola Busca -->
 <div class="micromodal" id="Cups07SB" aria-hidden="true">
-<div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-  <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="seven-cups-sola-busca">
-    <button aria-label="Close modal" data-micromodal-close>X</button>
-    <main class="modal-content" > <p>Suit  : Cups </p> <p> Value  : Seven (7) </p> <p> Plot : illusions, fantasy worlds, routes to escape, disappointment </p> <p> Character : daydream believer, activist, sponsor/grantor </p> <p> Energy/setting : water</p> 
-    </main>
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Seven of Cups — Sola Busca">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Seven (7)</p>
+        <p>Plot : illusions, fantasy worlds, routes to escape, disappointment</p>
+        <p>Character : daydream believer, activist, sponsor/grantor</p>
+        <p>Energy/setting : water</p>
+      </div>
+    </div>
   </div>
 </div>
+
+<!-- Eight of Cups, Sola Busca -->
+<div class="micromodal" id="08CupsSB" aria-hidden="true">
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Eight of Cups — Sola Busca">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Eight (8)</p>
+        <p>Plot : transitions, limited choices, no way out, jumping to conclusions, convergence</p>
+        <p>Character : survivor, judge, commercial sailor, researcher</p>
+        <p>Energy/setting : water</p>
+      </div>
+    </div>
+  </div>
 </div>
-<!-- Nine of Cups Tarok micromodal div -->
+
+<!-- Nine of Cups, Tarokk Kartya -->
 <div class="micromodal" id="09CupsTK" aria-hidden="true">
   <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-    <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="nine-cups-tarokk">
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Nine of Cups — Tarokk Kartya">
       <button aria-label="Close modal" data-micromodal-close>X</button>
-      <main class="modal-content" > <p>Suit  : Cups </p> <p> Value  : Nine (9) </p> <p> Plot :Success, winning awards, overcoming challenges</p> <p> Character : happy-go-lucky, optimistic, compassionate</p> <p> Energy/setting : water
-      </main>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Nine (9)</p>
+        <p>Plot : success, winning awards, overcoming challenges</p>
+        <p>Character : happy-go-lucky, optimistic, compassionate</p>
+        <p>Energy/setting : water</p>
+      </div>
     </div>
   </div>
-  </div>
-  <!-- Nine of cups Vicenti-Sforza micromodal data div -->
-  <div class="micromodal" id="09CupsVSf" aria-hidden="true">
-    <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-      <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="nine-cups-visconti-sforza">
-        <button aria-label="Close modal" data-micromodal-close>X</button>
-        <main class="modal-content" > <p>Suit  : Cups </p> <p> Value  : Nine (9) </p> <p> Plot :Success, winning awards, overcoming challenges</p> <p> Character : happy-go-lucky, optimistic, compassionate</p> <p> Energy/setting : water Suit  : Cups </p> <p> Value  : Seven(7)</p> <p> Plot : illusions, fantasy worlds, routes to escape, disappointment </p> <p> Character : daydream believer, activist, sponsor/grantor </p> <p> Energy/setting : water</p>
-      </main></div>
-    </div>
-    </div>
-<!-- Ten of cups Sola Busca micromodal data div-->
-<div class="micromodal" id="10CupsSB" aria-hidden="true">
-  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-    <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="ten-cup-sola-buscas">
-      <button aria-label="Close modal" data-micromodal-close>X</button>
-      <main class="modal-content" > <p>Suit  : Cups </p> <p> Value  : Ten (10) </p> <p> Plot : fulfillment, restoration, family abundance, connection to community </p> <p> Character : content, connected, fulfilled, satisfied</p> <p> Energy/setting : water</p>
-    </div>
-  </div>
-  </div>
-<!-- Knight of Cups Piedmontais micromodal div -->
- <div class="micromodal" id="KingCupsP" aria-hidden="true">
-<div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-  <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="king-cups-piemontais">
-    <button aria-label="Close modal" data-micromodal-close>X</button>
-    <main class="modal-content" > <p>Suit : Cups </p> <p> Value  : Face: King | Steward </p> <p> Plot : teaching maturity, running to support, labor leadership, care work, help in an emergency</p> <p> Character : reliable, resourceful, underrated hero, lionhearted, leader from the curtains </p> <p> Energy/setting : water </p> 
-  </main></div>
-</div>
-</div>
-<!-- Knight of Cups Piedmontais micromodal div -->
- <div class="micromodal" id="08CupsSB" aria-hidden="true">
-<div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-  <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="eight-cups-sola-busca">
-    <button aria-label="Close modal" data-micromodal-close>X</button>
-    <main class="modal-content" > <p>Suit : Cups </p> <p> Value  : Eight (8) </p> <p> Plot : transitions, limited choices, no way out, jumping to conclusions, convergence </p>  <p> Character : survivor, judge, commercial sailor, researcher </p> <p> Energy/setting : water </p> 
-  </main></div>
-</div>
 </div>
 
-<!-- pull in micromodal script-->
-  <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js" type="text/javascript"></script>
-  <!-- add script file -->
-  <script src="./scripts/main.js"> type="text/javascript"</script>
+<!-- Nine of Cups, Visconti-Sforza -->
+<div class="micromodal" id="09CupsVSf" aria-hidden="true">
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Nine of Cups — Visconti-Sforza">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Nine (9)</p>
+        <p>Plot : success, winning awards, overcoming challenges</p>
+        <p>Character : happy-go-lucky, optimistic, compassionate</p>
+        <p>Energy/setting : water</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ten of Cups, Sola Busca -->
+<div class="micromodal" id="10CupsSB" aria-hidden="true">
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="Ten of Cups — Sola Busca">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Ten (10)</p>
+        <p>Plot : fulfillment, restoration, family abundance, connection to community</p>
+        <p>Character : content, connected, fulfilled, satisfied</p>
+        <p>Energy/setting : water</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- King of Cups, Piedmontese -->
+<div class="micromodal" id="KingCupsP" aria-hidden="true">
+  <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="micromodal__container" role="dialog" aria-modal="true" aria-label="King of Cups — Piedmontese">
+      <button aria-label="Close modal" data-micromodal-close>X</button>
+      <div class="modal-content">
+        <p>Suit : Cups</p>
+        <p>Value : Face: King | Steward</p>
+        <p>Plot : teaching maturity, running to support, labor leadership, care work, help in an emergency</p>
+        <p>Character : reliable, resourceful, underrated hero, lionhearted, leader from the curtains</p>
+        <p>Energy/setting : water</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- pull in micromodal script -->
+<script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js" type="text/javascript"></script>
+<script src="./scripts/main.js" type="text/javascript"></script>
+</body>
 </html>
